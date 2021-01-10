@@ -8,6 +8,7 @@
     font-family: "Roboto", sans-serif;
     list-style: none;
     scroll-margin: none;
+    cursor: default;
 }
 
 a:visited {
