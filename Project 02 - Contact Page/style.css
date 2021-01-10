@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* { 
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    list-style: none;
+    scroll-margin: none;
+}
+
+a:visited {
+    color: white
+}
+
+a:active {
+    color: white;
+}
+
+/* =-=-=-=-= Body =-=-=-=-= */
+
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+/* =-=-=-=-= Centralize =-=-=-=-= */
+
+.smaller {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* =-=-=-=-= Background =-=-=-=-= */
+
+div.background {
+    width: 100%;
+    height: 80vh;
+    border-radius: 0 0 18px 18px;
+    background: linear-gradient(30deg, rgba(120, 255, 181, 0.8), rgba(0,0,0,0) 70.71%),
+                linear-gradient(150deg,rgba(245, 66, 170, 0.8), rgba(0,0,0,0) 70.71%),
+                linear-gradient(270deg, rgba(242, 255, 62, 0.8), rgba(0,0,0,0) 70.71%),
+                linear-gradient(359deg, rgba(22, 76, 252, 0.8), rgba(0,0,0,0) 70.71%);
+}
+
+/* =-=-=-=-= Header =-=-=-=-= */
+
+header {
+    padding: 30px 0;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: default;
+    
+}
+
+header h1 {
+    display: inline-block;
+}
+
+header h2 { 
+    float: right;
+    font-size: 22px;
+    font-weight: 500;
+    transform: translateY(8px);
+}
+
+/* =-=-=-=-= Card =-=-=-=-= */
+
+section.card {
+    height: 70vh;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 8px 24px 8px  rgba(35, 35, 41, 0.1);
+
+}
+
+/* =-=-=-=-= Left Side =-=-=-=-= */
+
+section.leftSide {
+    padding: 10px 5px;
+    width: 40%;
+    height: 100%;
+    border-right: 1px solid black;
+    transform: translateY(-10px);
+}
+
+
+/* =-=-=-=-= Image =-=-=-=-= */
+
+section.image div img {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.123);
+}
+
+section.image img {
+    object-fit: cover;
+    width: 100%;
+    display: inline-block;
+} 
+
+/* =-=-=-=-= Image Text =-=-=-=-= */
+
+section.image .text {
+    display: inline-block;
+    transform: translate(85%, -120%); 
+}
+
+section.image h1 {
+    color: #232329;
+    font-size: 35px;
+    text-transform: uppercase;
+    line-height: 33px;
+}
+
+/* =-=-=-=-= Image border bottom =-=-=-=-= */
+
+section.image {
+    border-bottom: 1px solid black;
+    height: 25%;
+}
+
+/* =-=-=-=-= Job =-=-=-=-= */
+
+section.leftSide h2 {
+    color: #232329;
+    padding: 10px 0;
+    font-size: 25px;
+    font-weight: 400;
+    border-bottom: 1px solid black;
+}
+
+/* =-=-=-=-= Description =-=-=-=-= */
+
+section.leftSide p {
+    padding-top: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #313131;
+}
+
+/* =-=-=-=-= Right Side  =-=-=-=-=*/
+
+section.rightSide {
+    width: 60%;
+    float: right;
+    transform: translate(3%, -68vh);
+}
+
+
+/* =-=-=-=-= Right Side top align =-=-=-=-=*/
+
+section.rightSide .top .content{
+    transform: translateX(20%);
+}
+
+/* =-=-=-=-= Right Side Top title =-=-=-=-= */
+
+section.rightSide h1{
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+/* =-=-=-=-= Skills =-=-=-=-= */
+
+section.rightSide ul {
+    padding-top: 55px;
+}
+
+section.rightSide li {
+    color: #313131;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+section.rightSide img {
+    width: 6%;
+}
+
+section.rightSide img.skillHtml {
+    transform: translate(75px, 2px);
+}
+
+section.rightSide img.skillCss {
+    transform: translate(132px, 2px);
+}
+
+section.rightSide img.skillJs {
+    transform: translate(61px, 2px)
+}
+
+/* =-=-=-=-= Right side Top border =-=-=-=-= */
+
+section.rightSide .top {
+    border-bottom: 1px solid black;
+}
+
+/* =-=-=-=-= Right side bottom =-=-=-=-= */
+
+section.rightSide .bottom .content{
+    transform: translateX(32%);
+}
+
+section.rightSide .bottom h1{
+    padding: 7px 0;
+    color: #232329;
+}
+
+section.rightSide .bottom button{
+    cursor: pointer;
+    outline: none;
+    display: block;
+    width: 40%;
+    padding: 7px;
+    transform: translateX(-15px);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.527);
+    background: linear-gradient(30deg, rgba(120, 255, 181, 0.8), rgba(0,0,0,0) 70.71%),
+                linear-gradient(150deg,rgba(245, 66, 170, 0.8), rgba(0,0,0,0) 70.71%),
+                linear-gradient(270deg, rgba(242, 255, 62, 0.8), rgba(0,0,0,0) 70.71%),
+                linear-gradient(359deg, rgba(22, 76, 252, 0.8), rgba(0,0,0,0) 70.71%);
+}
+
+section.rightSide .bottom button:hover {
+    background: linear-gradient(30deg, rgba(120, 255, 181, 0.8), rgba(0,0,0,0) 50%),
+                linear-gradient(150deg,rgba(245, 66, 170, 0.8), rgba(0,0,0,0) 50%),
+                linear-gradient(270deg, rgba(242, 255, 62, 0.8), rgba(0,0,0,0) 50%),
+                linear-gradient(359deg, rgba(22, 76, 252, 0.8), rgba(0,0,0,0) 50%);
+    text-shadow: 1px 1px 1px black;
+}
+
+section.rightSide .bottom button img {
+    width: 15%;
+    transform: translateY(5px);
+}
