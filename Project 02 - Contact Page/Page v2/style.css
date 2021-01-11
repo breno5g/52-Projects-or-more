@@ -97,7 +97,7 @@ section.image div img {
     height: 100px;
     overflow: hidden;
     border-radius: 50px;
-    border: 1px solid rgba(0, 0, 0, 0.123);
+    border: 1px solid rgba(170, 170, 170, 0.123);
 }
 
 section.image img {
@@ -124,7 +124,7 @@ section.image h1 {
 
 section.image {
     padding-top: 20px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid  rgb(189, 189, 189);
     height: 25%;
 }
 
@@ -135,7 +135,7 @@ section.leftSide h2 {
     padding: 10px 0;
     font-size: 25px;
     font-weight: 400;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(189, 189, 189);
 }
 
 /* =-=-=-=-= Description =-=-=-=-= */
@@ -234,13 +234,14 @@ section.rightSide .bottom h1{
 }
 
 section.rightSide .bottom button{
+    box-sizing: border-box;
     float: left;
-    margin-left: 10px;
+    margin-left: 15px;
     cursor: pointer;
     outline: none;
     width: 20%;
-    padding: 10px;
-    transform: translateX(76%);
+    padding: 10px 0;
+    transform: translateX(73%);
     border-radius: 10px;
     box-shadow: 0 8px 24px 8px  rgba(35, 35, 41, 0.1);     
     background-color: #e2e2e2f3;    
@@ -251,10 +252,9 @@ button:hover {
                 linear-gradient(150deg,rgba(245, 66, 170, 0.8), rgba(0,0,0,0) 50%),
                 linear-gradient(270deg, rgba(242, 255, 62, 0.8), rgba(0,0,0,0) 50%),
                 linear-gradient(359deg, rgba(22, 76, 252, 0.8), rgba(0,0,0,0) 50%);
-    transition: 1000ms;
 }
 
 section.rightSide .bottom button img {
-    width: 75%;
+    width: 50%;
     cursor: pointer;
 }
