@@ -258,3 +258,116 @@ section.rightSide .bottom button img {
     width: 50%;
     cursor: pointer;
 }
+
+/* =-=-=-=-= Responsividade =-=-=-=-= */
+
+/* =-=-=-=-= Responsividade =-=-=-=-= */
+
+@media screen and (max-width: 900px) {
+    body {
+        height: 100%;
+        overflow: hidden;
+    }
+    section.rightSide .top {
+        display: none;
+    }
+
+    section.leftSide {
+        width: 100%;
+    }
+
+    section.leftSide .image {
+        transform: translateX(23%);
+        border: none;
+    }
+
+    section.leftSide h2{
+        border-top: 1px solid rgb(189, 189, 189);
+        margin-bottom: none;
+        text-align: center;
+    }
+
+    section.leftSide p {
+        padding-top: 15px;
+        text-align: center;
+    }
+
+    section.rightSide .bottom{
+        width: 100%;
+        transform: translate(-50%, 190%);
+        background-color:rgba(255, 255, 255, 0);
+    }
+
+    section.rightSide .bottom h1{
+        display: none;
+    }
+    section.rightSide .bottom button{
+        box-sizing: border-box;
+        margin-left: 30px;
+        cursor: pointer;
+        outline: none;
+        width: 20%;
+        padding: 10px 0;
+        border-radius: 10px;
+        box-shadow: 0 8px 24px 8px  rgba(35, 35, 41, 0.1);     
+        background-color: #e2e2e2f3;    
+    }
+
+    section.rightSide .bottom button img {
+        width: 75%;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section.rightSide .top {
+        display: none;
+    }
+
+    section.leftSide {
+        width: 100%;
+    }
+
+    section.leftSide .image {
+        transform: translateX(10%);
+        border: none;
+    }
+
+    section.leftSide h2{
+        border-top: 1px solid rgb(189, 189, 189);
+        margin-bottom: none;
+        text-align: center;
+    }
+
+    section.leftSide p {
+        padding-top: 15px;
+        text-align: center;
+    }
+
+    section.rightSide .bottom{
+        width: 100%;
+        transform: translate(-50%, 211%);
+        background-color:rgba(255, 255, 255, 0);
+    }
+
+    section.rightSide .bottom h1{
+        display: none;
+    }
+
+    section.rightSide .bottom button{
+        box-sizing: border-box;
+        margin-left: 20px;
+        cursor: pointer;
+        outline: none;
+        width: 20%;
+        padding: 10px 0;
+        border-radius: 10px;
+        box-shadow: 0 8px 24px 8px  rgba(35, 35, 41, 0.1);     
+        background-color: #e2e2e2f3;    
+    }
+
+    section.rightSide .bottom button img {
+        width: 75%;
+        cursor: pointer;
+    }
+}
