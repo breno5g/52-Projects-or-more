@@ -110,7 +110,7 @@ section.content .main button {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     cursor: pointer;
-    transition: 200ms;
+    transition: 500ms;
 }
 
 section.content .main button:hover {
