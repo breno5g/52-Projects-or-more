@@ -76,6 +76,7 @@ section.content .main {
     position: relative;
     left: 70px;
     top: 60px;
+    user-select: none;
 }
 
 section.content .main h1 {
@@ -108,7 +109,15 @@ section.content .main button {
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
+    cursor: pointer;
+    transition: 200ms;
 }
+
+section.content .main button:hover {
+    background-color: #25fd5b;
+    color: black;
+    font-weight: 600;
+} 
 
 /* =-=-=-=-= Cards =-=-=-=-= */
 
