@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    background-color: rgb(255, 250, 250);
+}
+
+/* =-=-=-=-= Header =-=-=-=-= */
+header {
+    /* background-color: aqua; */
+    padding: 18px;
+    overflow: hidden;
+}
+
+header menu {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    transform: translateX(-20px);
+}
+
+header a {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0 15px;
+    transform: translateY(-75%);
+    color: black;
+    transition: 0.2s;
+}
+
+header a:hover {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+header img {
+    width: 15%;
+    margin: 0 60px;
+    transform: translateX(-10px);
+}
+
+/* =-=-=-=-= Content =-=-=-=-= */
+section.container {
+    padding: 50px 80px;
+}
+
+section .content {
+    display: inline-block;
+}
+
+/* =-=-=-=-= Left content =-=-=-=-= */
+.leftContent {
+    width: 50%;
+    transform: translateX(5%);
+    /* background-color: blue; */
+}
+
+.leftContent h1 {
+    font-size: 60px;
+    font-weight: 300;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 30px;
+}
+
+.leftContent button {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    background-color: #f34949;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 70px;
+}
+
+.leftContent .btn2 {
+    background-color: #ffffff00;
+    transform: translateY(5px);
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+}
+
+.leftContent .btn2 img{ 
+    width: 35px;
+    transform: translateY(25%);
+    margin-right: 5px;
+}
+
+
+
+.leftContent button {
+    cursor: pointer;
+}
+
+/* =-=-=-=-= Cards =-=-=-=-= */
+.leftContent .card {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+}
+
+.leftContent .card img {
+    margin-bottom: 12px;
+}
+
+.leftContent .center {
+    border-left: 1px solid rgba(0, 0, 0, 0.205);
+    border-right: 1px solid rgba(0, 0, 0, 0.205);
+}
+
+/* =-=-=-=-= Right content =-=-=-=-= */
+
+.rightContent {
+    width: 45%;
+    height: 350px;
+    position: relative;
+}
+
+.rightContent img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.rightContent .buttons {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.rightContent button {
+    text-align: center;
+    position: relative;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    padding: 15px;
+    top: 45%;
+    margin-left: 10px;
+    background-color: rgba(100, 100, 100, 0.39);
+}
+
+.rightContent button:first-child {
+    margin-right: 78%;
+}
+
+/* =-=-=-=-= Footer =-=-=-=-= */
+footer {
+    background-color: rgba(236, 236, 236, 0.212);
+    text-align: center;
+    padding: 23px;
+}
+
+footer a {
+    margin: 0 32px;
+    color: rgb(32, 32, 32);
+    text-transform: lowercase;
+    transition: 200ms;
+}
+
+footer a:hover {
+    color: #f34949;
+    border-bottom: 2px solid #f34949;
+}
