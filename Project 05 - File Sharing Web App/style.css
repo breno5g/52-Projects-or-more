@@ -142,10 +142,6 @@
     margin-bottom: 15px;
 }
 
-.preview header h1, .recentFiles
-weight: 500;
-}
-
 .preview header p, .recentFiles header p {
     justify-self: flex-end;
     color: blue;
