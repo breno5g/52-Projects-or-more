@@ -15,6 +15,7 @@
     display: grid;
     grid-template-columns: 150px 1fr 1fr;
     height: 100vh;
+    overflow-y: scroll;
 }
 
 /* =-=-=-=-= Left side bar =-=-=-=-= */
@@ -130,7 +131,44 @@
     font-size: 12px;
     font-weight: 300;
     letter-spacing: 2px;
+    margin-bottom: 40px;
 }
+
+/* =-=-=-=-= Preview =-=-=-=-= */
+.preview header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 15px;
+}
+
+.preview header h1 {
+    font-weight: 500;
+}
+
+.preview header p {
+    justify-self: flex-end;
+    color: blue;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.preview .cards {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 25px;
+}
+
+.preview .cards .biggerCard img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.preview .cards .smallerCard img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
 
 /* =-=-=-=-= Right side bar =-=-=-=-= */
 .rightSideBar {
