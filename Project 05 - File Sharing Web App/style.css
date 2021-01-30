@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* =-=-=-=-= Main Container =-=-=-=-= */
+.container {
+    padding: 12px;
+    display: grid;
+    grid-template-columns: 150px 1fr 300px;
+    height: 100vh;
+}
+
+/* =-=-=-=-= Left side bar =-=-=-=-= */
+.leftSideBar {
+    background-color: #fcfcfc;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px 0 0 12px;
+}
+
+.leftSideBar h1 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* =-=-=-=-= Left icons =-=-=-=- */
+.leftSideBar img {
+    margin: 10px auto 25px auto;
+    width: 30px;
+    opacity: 50%;
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+.leftSideBar img:nth-child(2) {
+    opacity: 100%;
+}
+
+.leftSideBar img:nth-child(6) {
+    position: relative;
+    top: 27%;
+}
+
+.leftSideBar img:hover {
+    opacity: 100%
+}
+
