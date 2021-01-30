@@ -13,7 +13,7 @@
 .container {
     padding: 12px;
     display: grid;
-    grid-template-columns: 150px 1fr 300px;
+    grid-template-columns: 150px 1fr 350px;
     height: 100vh;
 }
 
@@ -94,7 +94,7 @@
 .quickAccess .cards{
     display: grid;
     grid-template-columns: 90px 90px 90px 90px 90px 90px;
-    gap: 50px;
+    gap: 40px;
 }
 
 .quickAccess .cardContainer {
@@ -134,15 +134,14 @@
     margin-bottom: 40px;
 }
 
-/* =-=-=-=-= Preview =-=-=-=-= */
-.preview header, .recentFiles header {
+/* =-=-=-=-= Preview =-=-=-=-= */preview header, .recentFiles header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 15px;
 }
 
-.preview header h1, .recentFiles header h1 {
-    font-weight: 500;
+.preview header h1, .recentFiles
+weight: 500;
 }
 
 .preview header p, .recentFiles header p {
@@ -215,6 +214,23 @@
     margin-top: 50px;
 }
 
+.recentFiles header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 15px;
+}
+
+.recentFiles header h1 {
+    font-weight: 500;
+}
+
+.recentFiles header p {
+    justify-self: flex-end;
+    color: blue;
+    cursor: pointer;
+    font-weight: 300;
+}
+
 .recentFiles .filesContainer {
     display: grid;
     grid-template: 1fr 1fr 1fr / 2fr 1fr 1fr 1fr;
@@ -261,4 +277,80 @@
 /* =-=-=-=-= Right side bar =-=-=-=-= */
 .rightSideBar {
     background-color: #E0E9FC;
+    padding: 30px;
+}
+
+.rightSideBar header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 40px;
+}
+
+.rightSideBar header h1 {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.74);
+}
+
+.rightSideBar header p {
+    justify-self: flex-end;
+    color: rgba(0, 0, 0, 0.514);
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 800;
+    transform: translateY(-25%);
+    cursor: pointer;
+}
+
+.rightSideBar .downloadContainer h1 {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.521);
+    margin-bottom: 12px;
+}
+
+.rightSideBar .download {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    background-color: white;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.rightSideBar .download .img {
+    background-color: rgb(162, 0, 255);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.rightSideBar .download .img img{
+    width: 30px;
+}
+
+.rightSideBar .download .text h1{
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 7px;
+    margin-top: 10px;
+}
+
+.rightSideBar .download .text p{
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.452);
+}
+
+.rightSideBar .download img{
+    width: 30px;
+    margin-top: 10px;
+}
+
+.rightSideBar .downloadBar {
+    width: 50%;
+    height: 5px;
+    background-color: rgb(61, 178, 255);
+    border-radius: 2px 0 0 2px;
 }
