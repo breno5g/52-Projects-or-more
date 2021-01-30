@@ -13,7 +13,7 @@
 .container {
     padding: 12px;
     display: grid;
-    grid-template-columns: 150px 1fr 300px;
+    grid-template-columns: 150px 1fr 1fr;
     height: 100vh;
 }
 
@@ -85,3 +85,54 @@
 }
 
 /* =-=-=-= Quick Access =-=-=-= */
+.quickAccess h1{
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.quickAccess .cards{
+    display: grid;
+    grid-template-columns: 90px 90px 90px 90px 90px 90px;
+    gap: 50px;
+}
+
+.quickAccess .cardContainer {
+    align-items: center;
+}
+
+.quickAccess .cardContainer .card{
+    height: 90px;
+    border-radius: 15px;
+}
+
+.quickAccess .cardContainer .color1 {
+    background-color: #6473FC;
+}
+
+.quickAccess .cardContainer .color2 {
+    background-color: #3275F7;
+}
+
+.quickAccess .cardContainer .color3 {
+    background-color: #22244A;
+}
+
+.quickAccess .cardContainer img {
+    width: 50%;
+    position: relative;
+    left: 25%;
+    top: 25%;
+}
+
+.quickAccess .cardContainer h6 {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/* =-=-=-=-= Right side bar =-=-=-=-= */
+.rightSideBar {
+    background-color: #E0E9FC;
+}
