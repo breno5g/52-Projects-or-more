@@ -77,6 +77,8 @@
     padding: 5px 10px;
 }
 
+
+
 .content .search input::placeholder {
     padding: 10px;
     background-image: url(assets/icons/Content/icons8-search-50.png);
@@ -277,13 +279,13 @@ weight: 500;
 /* =-=-=-=-= Right side bar =-=-=-=-= */
 .rightSideBar {
     background-color: #E0E9FC;
-    padding: 30px;
+    padding: 40px 30px;
 }
 
 .rightSideBar header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .rightSideBar header h1 {
@@ -301,6 +303,8 @@ weight: 500;
     cursor: pointer;
 }
 
+/* =-=-=-=-= Downloads =-=-=-=-= */
+
 .rightSideBar .downloadContainer h1 {
     font-size: 15px;
     font-weight: 400;
@@ -315,6 +319,7 @@ weight: 500;
     gap: 10px;
     padding: 15px;
     border-radius: 15px;
+    margin-bottom: 30px;
 }
 
 .rightSideBar .download .img {
@@ -353,4 +358,29 @@ weight: 500;
     height: 5px;
     background-color: rgb(61, 178, 255);
     border-radius: 2px 0 0 2px;
+}
+
+/* =-=-=-=-= File received =-=-=-=-= */
+.rightSideBar .fileReceived h1 {
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.918);
+    margin-bottom: 30px;
+}
+
+.rightSideBar .fileReceived .files {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.rightSideBar .fileReceived img {
+    width: 90px;
+    height: 90px;
+    border-radius: 12px;
+}
+
+.rightSideBar .fileReceived p {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.582);
+    margin-top: 10px;
 }
