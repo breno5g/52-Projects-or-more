@@ -135,17 +135,17 @@
 }
 
 /* =-=-=-=-= Preview =-=-=-=-= */
-.preview header {
+.preview header, .recentFiles header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 15px;
 }
 
-.preview header h1 {
+.preview header h1, .recentFiles header h1 {
     font-weight: 500;
 }
 
-.preview header p {
+.preview header p, .recentFiles header p {
     justify-self: flex-end;
     color: blue;
     cursor: pointer;
@@ -192,6 +192,7 @@
     align-items: center;
     justify-content: center;
     justify-self: flex-end;
+    cursor: pointer;
 }
 
 .preview .card .btnContainer img {
@@ -207,6 +208,54 @@
 
 .musicText h1 {
     font-weight: 400;
+}
+
+/* =-=-=-= recent files =-=-=-= */
+.recentFiles {
+    margin-top: 50px;
+}
+
+.recentFiles .filesContainer {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 2fr 1fr 1fr 1fr;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    height: 150px;
+}
+
+.recentFiles .filesContainer .column .header {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.459);
+    margin-bottom: 18px;
+}
+
+.recentFiles .filesContainer .column .archive button {
+    width: 35px;
+    height: 35px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.recentFiles .filesContainer .column .archive button.pdf {
+   background-color: rgba(157, 157, 250, 0.637);
+   color: blue;
+   margin-bottom: 15px;
+}
+
+.recentFiles .filesContainer .column .archive button.jpg {
+   background-color: rgba(250, 157, 245, 0.637);
+   color: rgb(255, 0, 200);
+}
+
+.recentFiles .filesContainer .column .archive h1 {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.recentFiles .filesContainer .column p {
+    margin-bottom: 40px;
 }
 
 /* =-=-=-=-= Right side bar =-=-=-=-= */
