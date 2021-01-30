@@ -209,7 +209,13 @@ display: grid;
 }
 
 .musicText h1 {
+    font-size: 18px;
     font-weight: 400;
+}
+
+.musicText p {
+    font-size: 13px;
+    font-weight: 300;
 }
 
 /* =-=-=-= recent files =-=-=-= */
