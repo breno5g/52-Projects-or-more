@@ -106,6 +106,7 @@
 .quickAccess .cardContainer .card{
     height: 90px;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .quickAccess .cardContainer .color1 {
