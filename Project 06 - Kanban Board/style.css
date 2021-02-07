@@ -7,15 +7,21 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
 /* =-=-=-= Top bar =-=-=-= */
 nav {
     display: flex;
     flex-direction: row;
-    padding: 20px;
+    padding: 20px 40px;
     height: 80px;
     width: 100%;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-color: #F9F3FC;
 }
 
 nav img {
@@ -52,8 +58,113 @@ nav ul {
 
 nav ul li {
     list-style: none;
-    font-size: 25px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 600;
     margin-right: 20px;
 }
 
+/* =-=-=-=-= Container =-=-=-=-= */
+.container {
+    background: linear-gradient(90deg, rgba(181,160,255,1) 0%, rgba(145,255,208,1) 100%);
+    padding: 25px 0 0 40px;
+    height: 100%;
+    width: 100vw;
+    /* overflow-x: scroll; */
+}   
+.container h1 {
+    color: rgba(0, 0, 0, 0.671);
+}
+
+/* =-=-=-=-= Lists =-=-=-=-= */
+.container .lists {
+    height: 73%;
+    margin-top: 20px;
+
+}
+
+/* =-=-=-= List title =-=-=-= */
+.container .list {
+    width: 340px;
+    height: 100%;
+    padding: 10px;
+}
+
+.container .list .listTitle {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.container .list .listTitle h1,
+.container .list .listTitle h2,
+.container .list .listTitle h3 {
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.685);
+    margin-right: 10px;
+}
+
+.container .list .listTitle h2 {
+    background-color: rgba(255, 255, 255, 0.356);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    color: #827ADB;
+}
+
+.container .list .listTitle h3 {
+    transform: translateX(180px);
+    color: #827ADB;
+}
+
+/* =-=-=-=-= Cards =-=-=-=-= */
+.container .list .listItems {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.container .list .card {
+    width: 300px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.849);
+    margin-bottom: 15px;
+    border-radius: 24px;
+}
+
+.container .list .card .tag {
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(245, 106, 245);
+    background-color: rgba(216, 191, 216, 0.753);
+    padding: 5px 10px;
+    width: fit-content;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.container .list .card .tag[value = "Development"] {
+    color: rgb(51, 136, 248);
+    background-color: rgba(191, 193, 216, 0.63);
+}
+
+.container .list .card .tag[value = "Research"] {
+    color: rgb(54, 51, 248);
+    background-color: rgba(191, 191, 216, 0.63);
+}
+
+.container .list .card .taskName {
+    font-size: 20px;
+    font-weight: 400;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+.container .list .card .infos {
+    display: flex;
+    align-items: center;
+}
+
+.container .list .card .infos p {
+    margin-left: 5px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.466);
+}
