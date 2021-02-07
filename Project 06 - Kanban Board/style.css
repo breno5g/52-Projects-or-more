@@ -58,9 +58,20 @@ nav ul {
 
 nav ul li {
     list-style: none;
+    color: rgba(0, 0, 0, 0.582);
     font-size: 20px;
     font-weight: 600;
     margin-right: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav ul li:first-child {
+    color: #5f52f0;
+}
+
+nav ul li:hover {
+    color: #5f52f0;
 }
 
 /* =-=-=-=-= Container =-=-=-=-= */
@@ -77,14 +88,17 @@ nav ul li {
 
 /* =-=-=-=-= Lists =-=-=-=-= */
 .container .lists {
-    height: 73%;
+    height: 79%;
     margin-top: 20px;
-
+    display: grid;
+    grid-template-columns: repeat(10, 400px);
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 /* =-=-=-= List title =-=-=-= */
 .container .list {
-    width: 340px;
+    width: 363px;
     height: 100%;
     padding: 10px;
 }
@@ -97,34 +111,36 @@ nav ul li {
 .container .list .listTitle h1,
 .container .list .listTitle h2,
 .container .list .listTitle h3 {
-    font-size: 25px;
-    color: rgba(0, 0, 0, 0.685);
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.479);
     margin-right: 10px;
 }
 
 .container .list .listTitle h2 {
     background-color: rgba(255, 255, 255, 0.356);
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     text-align: center;
     border-radius: 5px;
     color: #827ADB;
 }
 
 .container .list .listTitle h3 {
-    transform: translateX(180px);
+    font-size: 25px;
+    transform: translateX(190px);
     color: #827ADB;
 }
 
 /* =-=-=-=-= Cards =-=-=-=-= */
 .container .list .listItems {
-    height: 100%;
+    height: 460px;
     overflow-y: scroll;
 }
 
 .container .list .card {
-    width: 300px;
-    padding: 10px;
+    width: 320px;
+    height: 170px;
+    padding: 15px;
     background-color: rgba(255, 255, 255, 0.849);
     margin-bottom: 15px;
     border-radius: 24px;
@@ -138,7 +154,7 @@ nav ul li {
     padding: 5px 10px;
     width: fit-content;
     border-radius: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .container .list .card .tag[value = "Development"] {
@@ -155,7 +171,7 @@ nav ul li {
     font-size: 20px;
     font-weight: 400;
     width: fit-content;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .container .list .card .infos {
@@ -167,4 +183,18 @@ nav ul li {
     margin-left: 5px;
     font-size: 15px;
     color: rgba(0, 0, 0, 0.466);
+}
+
+
+/* =-=-=-= Scrollbar =-=-=-=-= */
+*::-webkit-scrollbar {
+    width: 10px;
+    border: 1px solid rgba(223, 222, 222, 0.466);
+    background-color: rgba(128, 128, 128, 0.192);
+    border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(236, 236, 236, 0.712);
+    border-radius: 5px;
 }
