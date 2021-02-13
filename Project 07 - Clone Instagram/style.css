@@ -296,3 +296,37 @@ section .comment button {
     color: rgba(0, 0, 0, 0.288);
     font-weight: 600;
 }
+
+/* =-=-=-=-= Right =-=-=-=-= */
+.right {
+    padding: 20px;
+    overflow: hidden;
+}
+
+.right header {
+    height: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.right header img {
+    height: 70%;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.right header h1,
+.right header spam {
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.right header h1 {
+    color: #000000bd;
+}
+
+.right header span {
+    color: #0000005e;
+    font-weight: 400;
+}
