@@ -13,6 +13,7 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: #FAFAFA;
+    overflow-x: hidden;
 }
 
 /* =-=-=-=-= Top menu =-=-=-=-= */
@@ -152,6 +153,12 @@ section .left .storys .story h1{
 }
 
 /* =-=-=-=-= Posts =-=-=-=-= */
+section .post {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    border-radius: 5px;
+}
+/* =-=-=-=-= Post header =-=-=-=-= */
 section .post header {
     height: 60px;
     width: 100%;
@@ -169,11 +176,13 @@ section .post header img {
     height: 120%;
     border-radius: 50%;
     margin-right: 15px;
+    cursor: pointer;
 }
 
 section .post header h1 {
     font-size: 15px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 section .post header span {
@@ -182,4 +191,33 @@ section .post header span {
     font-weight: 500;
     color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
+}
+
+/* =-=-=-=-= Post body =-=-=-= */
+section .body {
+    height: 400px;
+}
+
+section .body img{
+    width: 100%;
+    height: 400px;
+}
+
+/* =-=-=-=-= Post buttons =-=-=-=-= */
+section .buttons {
+    padding: 5px 20px;
+}
+
+section .buttons ul{
+    display: flex;
+}
+
+section .buttons li{
+    list-style: none;
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+section .buttons li:last-child{
+    transform: translateX(410px);
 }
