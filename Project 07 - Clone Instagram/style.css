@@ -6,3 +6,63 @@
     text-decoration: none;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* =-=-=-=-= Top menu =-=-=-=-= */
+nav {
+    width: 100%;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+}
+
+nav .container {
+    width: 1000px;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+nav img {
+    width: 125px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 22px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+nav input {
+    width: 220px;
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    background-color: #FAFAFA;
+    background-image: url(assets/icons/icons8-search-50.png);
+    background-repeat: no-repeat;
+    background-size: 13px;
+    background-position: 70px;
+}
+
+nav input::placeholder {
+    text-align: center;
+    font-size: 15px;
+}
+
+nav li img {
+    width: 25px;
+    border-radius: 50%;
+}
