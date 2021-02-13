@@ -1,14 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     outline: none;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
     width: 100vw;
     height: 100vh;
+    background-color: #FAFAFA;
 }
 
 /* =-=-=-=-= Top menu =-=-=-=-= */
@@ -26,7 +30,7 @@ nav .container {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
 nav img {
@@ -65,4 +69,127 @@ nav input::placeholder {
 nav li img {
     width: 25px;
     border-radius: 50%;
+}
+
+/* =-=-=-=-= Main section =-=-=-=-= */
+section {
+    width: 1000px;
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    gap: 10px;
+    padding: 0 30px;
+}
+
+/* =-=-=-=-= Storys =-=-=-=-= */
+section .left {
+    width: 100%;
+    overflow: hidden;
+}
+/*
+section .left .storys {
+    width: 100%;
+    height: 125px;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.253);
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+section .left .storys .storiesContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+section .left .storys .storiesControls {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    background-color: red;
+}
+
+section .left .storys .storiesControls span:last-child {
+    transform: translateX(50px)
+}
+
+section .left .storys .storiesContainer::-webkit-scrollbar {
+    -webkit-appearance: none;
+} */
+section .left .storys {
+    width: 100%;
+    height: 125px;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.253);
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+section .left .storys .storiesContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+section .left .storys span {
+    position: absolute;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 50%;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.295);
+}
+
+section .left .storys span:last-child {
+    right: 0;
+}
+
+section .left .storys .storiesContainer::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+/* =-=-=-=-= Story =-=-=-=-= */
+section .left .storys .story {
+    width: 66px;
+    height: 66px;
+    margin-left: 25px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+section .left .storys .story img{
+    width: 66px;
+    height: 66px;
+    margin-top: 5px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px white,
+                0 0 0 6px rgba(167, 34, 255, 0.432);
+}
+
+section .left .storys .story h1{
+    font-size: 10px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+section .right {
+    width: 100%;
+    height: 500px;
+    background-color: tomato;
 }
