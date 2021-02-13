@@ -305,14 +305,14 @@ section .comment button {
 
 /* =-=-=-=-= Header =-=-=-=-= */
 .right header {
-    height: 100px;
-    margin-bottom: 20px;
+    height: 80px;
     display: flex;
     align-items: center;
 }
 
 .right header img {
-    height: 70%;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
     margin-right: 15px;
 }
@@ -333,19 +333,56 @@ section .comment button {
 }
 
 /* =-=-=-=-= Suggestions =-=-=-=-= */
-.right .suggestions .text{
+.right .suggestions header{
     display: flex;
     justify-content: space-between;
 }
 
-.right .suggestions .text h1 {
+.right .suggestions h1 {
     font-size: 17px;
     color: #0000004d;
 }
 
-.right .suggestions .text span {
+.right .suggestions span {
     color: rgba(0, 0, 0, 0.795);
     font-size: 15px;
     font-weight: 500;
     cursor: pointer;
+}
+
+/* =-=-=-= Suggestions cards =-=-=-=-= */
+.right .cards .card {
+    display: grid;
+    grid-template-columns: 50px 5fr 1fr;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.right .cards .card img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.right .cards .card {
+    transform: translateY(4px);
+}
+
+.right .cards .card .text h1{
+    color: rgba(0, 0, 0, 0.795);
+    font-size: 15px;
+    line-height: 7px;
+}
+
+.right .cards .card .text span{
+    color: rgba(0, 0, 0, 0.514);
+    font-size: 12px;
+    align-self: flex-end;
+}
+
+.right .cards .card span {
+    color: #2890ff;
+    font-size: 15px;
+    font-weight: 600;    
 }
