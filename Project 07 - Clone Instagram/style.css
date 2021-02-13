@@ -303,6 +303,7 @@ section .comment button {
     overflow: hidden;
 }
 
+/* =-=-=-=-= Header =-=-=-=-= */
 .right header {
     height: 100px;
     margin-bottom: 20px;
@@ -329,4 +330,22 @@ section .comment button {
 .right header span {
     color: #0000005e;
     font-weight: 400;
+}
+
+/* =-=-=-=-= Suggestions =-=-=-=-= */
+.right .suggestions .text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.right .suggestions .text h1 {
+    font-size: 17px;
+    color: #0000004d;
+}
+
+.right .suggestions .text span {
+    color: rgba(0, 0, 0, 0.795);
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
 }
