@@ -104,22 +104,35 @@ header form.searchBar .micButton {
     border: 0;
     font-size: 20px;
     transform: translateY(2px);
+    cursor: pointer;
 }
 
 /* =-=-=-=-= Header Right =-=-=-=-= */
 header .right{
     height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 header .right a {
+    height: 40px;
+    width: 40px;
     font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+header .right a:hover {
+    background-color: rgba(255, 255, 255, 0.144);
 }
 
 header .right img{
-    height: 80%;
+    height: 30px;
     border: 1px solid rgba(255, 255, 255, 0.116);
     border-radius: 50%;
+    cursor: pointer;
 }
