@@ -138,34 +138,34 @@ header .right img{
 }
 
 /* =-=-=-=-= Lateral Menu =-=-=-=-= */
-.container, .top, .playlists {
+.container .menu, .top, .playlists {
     display: flex;
     flex-direction: column;
     font-family: "Roboto";
 }
 
-.container {
+.container .menu {
     background-color: #202020;
     width: 250px;
 }
 
-.container .top {
+.container .menu .top {
     border-bottom: 1px solid #39383B;
 }
 
-.container .top,
-.container .playlists {
+.container .menu .top,
+.container .menu .playlists {
     padding: 20px 0;
 }
 
-.container .top a,
-.container .playlists a {
+.container .menu .top a,
+.container .menu .playlists a {
     color: rgba(255, 255, 255, 0.918);
     font-size: 15px;
 }
 
-.container .top a i,
-.container .playlists a i {
+.container .menu .top a i,
+.container .menu .playlists a i {
     font-size: 20px;
     padding: 8px 0;
     margin-left: 40px;
@@ -173,12 +173,12 @@ header .right img{
     color: rgba(255, 255, 255, 0.384);
 }
 
-.container .top a.selected {
+.container .menu .top a.selected {
     background-color: #39383B;
 }
 
-.container .top a.selected,
-.container .top i.selected {
+.container .menu .top a.selected,
+.container .menu .top i.selected {
     color: white;
 }
 
@@ -193,7 +193,7 @@ header .right img{
 }
 
 /* =-=-=-= Subscriptions =-=-=-= */
-.container .subscriptions h1{
+.container .menu .subscriptions h1{
     font-size: 15px;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.514);
@@ -201,7 +201,7 @@ header .right img{
     margin: 15px 0 10px 40px;
 }
 
-.container .subscriptions .channel {
+.container .menu .subscriptions .channel {
     margin-left: 40px;
     display: flex;
     align-items: center;
@@ -210,9 +210,33 @@ header .right img{
     color: rgba(255, 255, 255, 0.904);
 }
 
-.container .subscriptions .channel img {
+.container .menu .subscriptions .channel img {
     height: 25px;
     width: 25px;
     border-radius: 50%;
     margin-right: 15px;
+}
+
+/* =-=-=-= Scroll style =-=-=-= */
+.container {
+    height: 100%;
+}
+
+.container .menu {
+    height: 90%;
+    overflow-y: scroll;
+}
+
+.container .menu::-webkit-scrollbar {
+    background-color: transparent;
+    width: 10px;
+    display: none;
+}
+
+.container .menu:hover::-webkit-scrollbar {
+    display: unset;
+}
+
+.container .menu::-webkit-scrollbar-thumb{
+    background-color: #5c5c5e;
 }
