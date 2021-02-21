@@ -137,6 +137,12 @@ header .right img{
     cursor: pointer;
 }
 
+/* =-=-=-=-= Section =-=-=-=-= */
+section {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
+
 /* =-=-=-=-= Lateral Menu =-=-=-=-= */
 .container .menu, .top, .playlists {
     display: flex;
@@ -239,4 +245,50 @@ header .right img{
 
 .container .menu::-webkit-scrollbar-thumb{
     background-color: #5c5c5e;
+}
+
+/* =-=-=-=-= Videos =-=-=-=-= */
+.container .videos {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.container .videos .video {
+    height: fit-content;
+    margin-bottom: 20px;
+}
+
+.container .videos .video .infos{
+    display: grid;
+    grid-template-columns: 40px 1fr 10px;
+    gap: 5px;
+}
+
+.container .videos .video .thumbnail img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.container .videos .video .infos img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.container .videos .video .infos h1 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.container .videos .video .infos .text span {
+    font-size: 15px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.596);
+}
+
+.container .videos .video .infos .options span i{
+    color: rgba(255, 255, 255, 0.61);
 }
