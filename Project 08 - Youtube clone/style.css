@@ -44,7 +44,7 @@ header .left a i {
     font-size: 25px;
     color: rgb(245, 31, 31);
     transform: translateY(3px);
-    margin-right: 4px;
+    margin-right: 10px;
 }
 
 header .left a {
@@ -135,4 +135,55 @@ header .right img{
     border: 1px solid rgba(255, 255, 255, 0.116);
     border-radius: 50%;
     cursor: pointer;
+}
+
+/* =-=-=-=-= Lateral Menu =-=-=-=-= */
+.container, .top, .playlists {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto";
+}
+
+.container {
+    background-color: #202020;
+    width: 250px;
+}
+
+.container .top {
+    border-bottom: 1px solid #39383B;
+}
+
+.container .top,
+.container .playlists {
+    padding: 20px 0;
+}
+
+.container .top a,
+.container .playlists a {
+    color: rgba(255, 255, 255, 0.767);
+    font-size: 15px;
+}
+
+.container .top a i,
+.container .playlists a i {
+    font-size: 20px;
+    padding: 8px 0;
+    margin-left: 40px;
+    margin-right: 15px;
+    color: rgba(255, 255, 255, 0.384);
+}
+
+.container .top a.selected {
+    background-color: #39383B;
+}
+
+.container .top a.selected,
+.container .top i.selected {
+    color: white;
+}
+
+.playlists a {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
