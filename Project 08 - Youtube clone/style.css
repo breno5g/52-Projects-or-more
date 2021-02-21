@@ -257,7 +257,7 @@ section {
 
 .container .videos .video {
     height: fit-content;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .container .videos .video .infos{
@@ -291,4 +291,23 @@ section {
 
 .container .videos .video .infos .options span i{
     color: rgba(255, 255, 255, 0.61);
+    cursor: pointer;
+}
+
+/* =-=-=-= Scroll dos videos =-=-=-=-= */ 
+.container .videos {
+    height: 90vh;
+}
+
+.container .videos {
+    overflow-y: scroll;
+}
+
+.container .videos::-webkit-scrollbar {
+    background-color: transparent;
+    width: 10px;
+}
+
+.container .videos::-webkit-scrollbar-thumb{
+    background-color: #5c5c5e;
 }
