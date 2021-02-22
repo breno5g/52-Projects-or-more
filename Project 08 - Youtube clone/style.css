@@ -272,9 +272,27 @@ section {
     gap: 5px;
 }
 
+.container .videos .video .thumbnail {
+    position: relative;
+}
+
 .container .videos .video .thumbnail img{
     width: 100%;
     margin-bottom: 10px;
+}
+
+.container .videos .video .thumbnail .duration {
+    position: absolute;
+    bottom: 25px;
+    right: 5px;
+    font-size: 12px;
+}
+
+.container .videos .video .thumbnail .duration span {
+    background-color: #000000c5;
+    padding: 5px;
+    border-radius: 2px;
+    user-select: none;
 }
 
 .container .videos .video .infos img{
