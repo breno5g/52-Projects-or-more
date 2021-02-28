@@ -10,7 +10,8 @@
 body {
     width: 100vw;
     height: 100vh;
-    overflow-x: hidden;
+    overflow: hidden;
+    background-color: #F7FAFF;
 }
 
 /* =-=-=-=-= Top Bar =-=-=-=-= */
@@ -59,7 +60,7 @@ header div button {
     color: white;
     font-weight: 800;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.205);
-    background-color: #4cfd4c;
+    background-color: #61f861;
 }
 
 header div span.user {
@@ -71,4 +72,146 @@ header div span.user {
     font-weight: 600;
 }
 
-/* =-=-=-=-= Content =-=-=-=-= */
+/* =-=-=-=-= Section =-=-=-=-= */
+section {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+}
+
+/* =-=-=-=-= Domains =-=-=-=-= */
+section .domains {
+    padding: 40px 30px;
+}
+
+section .domains .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+section .domains .top h1 {
+    font-weight: 400;   
+}
+
+section .domains .top span {
+    color: rgba(0, 0, 0, 0.253);
+    font-weight: 100;
+}
+
+section .domains .top button {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 0;
+    background-color: #f1727b;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+section .domains .top button:hover {
+    background-color: #ee3a46;
+}
+
+section .domains .myDomains h1 {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+}
+
+section .domains .myDomains div:first-of-type {
+    background-color: #F0F4FE;
+    padding: 2px 7px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+section .domains .myDomains div:first-of-type span {
+    color: #557CF2;
+    font-weight: 500;
+    user-select: none;
+    cursor: pointer;
+}
+
+section .domains .myDomains div:first-of-type span i {
+    margin-right: 5px;
+}
+
+section .domains .myDomains div svg {
+    height: 35px;
+    padding: 5px;
+    background-color: #dadee9;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+section .domains .domainConfigs {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 5px;
+}
+
+section .domains .domainConfigs div.myDomainsIcons span {
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #557CF2;
+}
+
+section .domains .domainConfigs div.myDomainsIcons span button {
+    background-color: rgb(255, 255, 255);
+    border: 0;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #557CF2;
+    box-shadow: 0.5px 1.5px 1px rgba(0, 0, 0, 0.315);
+}
+
+section .domains .domainConfigs div.myDomainsIcons:last-child span {
+    color: rgba(0, 0, 0, 0.637);
+    font-weight: 300;
+}
+
+section .domains .domainConfigs div.myDomainsIcons {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+    border-radius: 0;
+    padding: 0 10px;
+    background-color: transparent;
+}
+
+section .domains .domainConfigs .myDomainsIcons:nth-child(1):before,
+section .domains .domainConfigs .myDomainsIcons:nth-child(2):before,
+section .domains .domainConfigs .myDomainsIcons:nth-child(3):before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+section .domains .domainConfigs .myDomainsIcons:nth-child(1):before {
+    background-image: url(assets/icons/img-u-webapps.svg);
+}
+
+section .domains .domainConfigs .myDomainsIcons:nth-child(2):before {
+    background-image: url(assets/icons/img-u-mail.svg);
+}
+
+section .domains .domainConfigs .myDomainsIcons:nth-child(3):before {
+    background-image: url(assets/icons/img-u-domain.svg);
+}
+
+/* =-=-=-=-= Content Panel =-=-=-=-=-= */
