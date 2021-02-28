@@ -1,4 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* =-=-=-=-= Top Bar =-=-=-=-= */
+header {
+    height: 60px;
+    background-color: #557CF2;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    height: 90%;
+}
+
+header div {
+    height: 100%;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: #55f255; */
+}
+
+header div div {
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: azure; */
+}
+
+header div div img {
+    height: 80%;
+}
+
+header div div span{
+    color: #8BBBB0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+header div button {
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 0;
+    color: white;
+    font-weight: 800;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.205);
+    background-color: #4cfd4c;
+}
+
+header div span.user {
+    background: mediumaquamarine;
+    padding: 7px 10px;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* =-=-=-=-= Content =-=-=-=-= */
