@@ -352,6 +352,68 @@ section .container .hostConfigs .firstLine .serverState .box .text h2:last-of-ty
 /* =-=-=-=-= Second line =-=-=-=-= */
 section .container .hostConfigs .secondLine {
     display: flex;
+    gap: 20px;
+}
+
+section .container .hostConfigs .secondLine .edit {
+    background-color: #f5f7fd;
+    padding: 3px 15px;
+    border-radius: 20px;
+    color: #557cf2;
+    font-weight: 400;
+    box-shadow: 0px 1.5px 1px rgba(0, 0, 0, 0.212);
+    user-select: none;
+    cursor: pointer;
+}
+
+section .container .hostConfigs .secondLine .edit span i {
+    margin-right: 10px;
+}
+
+section .container .hostConfigs .secondLine .controls {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 20px;
+}
+
+section .container .hostConfigs .secondLine .controls button {
+    border: 0;
+    background-color: #f5f7fd;
+    color: #557cf2;
+    padding: 5px 10px;
+    text-align: center;
+    box-shadow: 0px 1.5px 1px rgba(0, 0, 0, 0.212);
+    cursor: pointer;
+}
+
+section .container .hostConfigs .secondLine .controls button:nth-child(1) {
+    border-radius: 20px 0 0 20px;
+}
+section .container .hostConfigs .secondLine .controls button:nth-child(2) {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: not-allowed;
+    background-color: #f5f7fd56;
+}
+section .container .hostConfigs .secondLine .controls button:nth-child(3) {
+    border-radius: 0 20px 20px 0;
+}
+
+section .container .hostConfigs .secondLine .share span{
+    background-color: #f5f7fd;
+    padding: 3px 15px;
+    border-radius: 20px;
+    color: #557cf2;
+    font-weight: 400;
+    box-shadow: 0px 1.5px 1px rgba(0, 0, 0, 0.212);
+    user-select: none;
+    cursor: pointer;
+}
+
+section .container .hostConfigs .secondLine .share span i {
+    font-size: 14px;
+    margin-right: 5px;
 }
 
 /* =-=-=-=-= Third line =-=-=-=-= */
