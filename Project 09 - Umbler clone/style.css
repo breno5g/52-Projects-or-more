@@ -10,7 +10,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    /* overflow: hidden; */
+    overflow: hidden;
     background-color: #F7FAFF;
 }
 
@@ -33,7 +33,6 @@ header div {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* background-color: #55f255; */
 }
 
 header div div {
@@ -91,7 +90,7 @@ section .domains .top {
 }
 
 section .domains .top h1 {
-    font-weight: 400;   
+    font-weight: 400;
 }
 
 section .domains .top span {
@@ -216,6 +215,7 @@ section .domains .domainConfigs .myDomainsIcons:nth-child(3):before {
 /* =-=-=-=-= Content Panel =-=-=-=-=-= */
 section .container {
     padding: 40px;
+    overflow-y: scroll;
 }
 
 section .container .hostConfigs {
@@ -223,7 +223,7 @@ section .container .hostConfigs {
     overflow: hidden;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0 0 1px 0 rgba(59,89,178,.08), 
+    box-shadow: 0 0 1px 0 rgba(59,89,178,.08),
                 0 4px 14px rgba(59,89,178,.06);
     padding: 20px 30px 0 30px;
 }
@@ -270,7 +270,7 @@ section .container .hostConfigs .firstLine .links {
     justify-content: center;
     gap: 20px;
     padding: 0 25px;
-    
+
 }
 
 section .container .hostConfigs .firstLine .links span {
@@ -323,7 +323,7 @@ section .container .hostConfigs .firstLine .serverState .box{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 section .container .hostConfigs .firstLine .serverState .box .text {
@@ -438,4 +438,60 @@ section .container .hostConfigs .thirdLine span i{
 section .container .hostConfigs .thirdLine span:first-child {
     color: #557cf2;
     border-bottom: 4px solid #557cf2;
+}
+
+/* =-=-=-=-= Deploy container =-=-=-=-= */
+section .container .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+
+section .container .cards .card {
+    background-color: #FFFFFF;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 1px 0 rgba(59,89,178,.08),
+                0 4px 14px rgba(59,89,178,.06);
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+section .container .cards .card:hover {
+    box-shadow: 0px 0px 0px 5px #557CF2;
+}
+
+section .container .cards .card img {
+    width: 130px;
+    margin-bottom: 10px;
+}
+
+section .container .cards .card h1 {
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: hsla(0, 0%, 0%, 0.822);
+}
+
+section .container .cards .card h1 i {
+    font-size: 17px;
+    margin-left: 5px;
+}
+
+section .container .cards .card p {
+    color: rgba(0, 0, 0, 0.836);
+    font-weight: 300;
+}
+
+section .container .cards .card p span {
+    background-color: #F7F7F9;
+    padding: 0px 5px;
+    border-radius: 20px;
+    color: #BD4147;
 }
