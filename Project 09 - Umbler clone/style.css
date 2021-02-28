@@ -259,7 +259,7 @@ section .container .hostConfigs .firstLine .nodeLogo span {
     text-align: center;
     border-radius: 20px;
     position: absolute;
-    bottom: -2px;
+    bottom: 6px;
 }
 
 /* =-=-=-=-= Links =-=-=-=-= */
