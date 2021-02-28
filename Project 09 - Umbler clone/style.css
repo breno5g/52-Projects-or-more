@@ -40,7 +40,6 @@ header div div {
     width: 35%;
     display: flex;
     justify-content: space-around;
-    /* background-color: azure; */
 }
 
 header div div img {
@@ -215,3 +214,147 @@ section .domains .domainConfigs .myDomainsIcons:nth-child(3):before {
 }
 
 /* =-=-=-=-= Content Panel =-=-=-=-=-= */
+section .container {
+    padding: 40px;
+}
+
+section .container .hostConfigs {
+    /* height: 260px; */
+    overflow: hidden;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 1px 0 rgba(59,89,178,.08), 
+                0 4px 14px rgba(59,89,178,.06);
+    padding: 30px 30px 0 30px;
+}
+
+/* =-=-=-=-= First line =-=-=-=-= */
+section .container .hostConfigs .firstLine {
+    display: grid;
+    grid-template-columns: 15% 40% 44%;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* =-=-=-=-= Node Logo =-=-=-=-= */
+
+section .container .hostConfigs .firstLine .nodeLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+section .container .hostConfigs .firstLine .nodeLogo img {
+    height: 90px;
+}
+
+section .container .hostConfigs .firstLine .nodeLogo span {
+    color: white;
+    font-size: 12px;
+    background-color: #559355;
+    width: 90px;
+    height: 15px;
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    bottom: -2px;
+}
+
+/* =-=-=-=-= Links =-=-=-=-= */
+
+section .container .hostConfigs .firstLine .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 25px;
+    
+}
+
+section .container .hostConfigs .firstLine .links span {
+    cursor: pointer;
+}
+
+section .container .hostConfigs .firstLine .links span:first-of-type {
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.63);
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+section .container .hostConfigs .firstLine .links span:first-of-type:hover {
+    color: rgba(0, 0, 0, 0.747);
+}
+
+section .container .hostConfigs .firstLine .links span:first-of-type i {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+section .container .hostConfigs .firstLine .links span:last-of-type {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.329);
+    transition: all 0.2s;
+}
+
+section .container .hostConfigs .firstLine .links span:last-of-type:hover {
+    color: rgba(0, 0, 0, 0.466);
+}
+
+section .container .hostConfigs .firstLine .links span:last-of-type i {
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+/* =-=-=-=-= Server state =-=-=-=-= */
+section .container .hostConfigs .firstLine .serverState {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+section .container .hostConfigs .firstLine .serverState .box{
+    background-color: #DFE5F2;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+section .container .hostConfigs .firstLine .serverState .box .text {
+    background-color: white;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section .container .hostConfigs .firstLine .serverState .box .text h2 {
+    font-size: 18px;
+}
+
+section .container .hostConfigs .firstLine .serverState .box .text h2:first-of-type {
+    color: #61f861;
+}
+
+section .container .hostConfigs .firstLine .serverState .box .text h2:last-of-type {
+    color: rgba(0, 0, 0, 0.39);
+    font-weight: 400;
+}
+
+/* =-=-=-=-= Second line =-=-=-=-= */
+section .container .hostConfigs .secondLine {
+    display: flex;
+}
+
+/* =-=-=-=-= Third line =-=-=-=-= */
+section .container .hostConfigs .thirdLine {
+    display: flex;   
+}
