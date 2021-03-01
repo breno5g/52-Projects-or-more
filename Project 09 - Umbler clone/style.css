@@ -427,8 +427,14 @@ section .container .hostConfigs .thirdLine span {
     color: #0000009f;
     font-size: 17px;
     font-weight: 500;
-    padding: 10px 15px;
+    margin: 10px 15px;
     padding-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+section .container .hostConfigs .thirdLine span:hover {
+    color: #557CF2;
 }
 
 section .container .hostConfigs .thirdLine span i{
