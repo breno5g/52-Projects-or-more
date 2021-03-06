@@ -21,6 +21,7 @@ body {
 nav {
     width: 70px;
     height: 100%;
+    background-color: #1e1f2b;
 }
 
 li {
@@ -181,3 +182,5 @@ nav ul li span {
     font-size: 13px;
     font-weight: 500;
 }
+
+/* =-=-=-=-= Chat =-=-=-=-= */
