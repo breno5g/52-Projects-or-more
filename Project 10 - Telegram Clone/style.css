@@ -115,6 +115,7 @@ nav ul li span {
 .chatsList .chats:hover::-webkit-scrollbar {
     display: block;
     position: absolute;
+    position: absolute;
 }
 
 .chatsList .chats .chat:nth-child(2) {
@@ -165,6 +166,11 @@ nav ul li span {
     justify-content: space-between;
     padding: 2.5px 0;
 }
+
+.chatsList .chats:hover .hour {
+    transform: translateX(5px);
+}
+
 .chatsList .chats .chat .hour span {
     font-size: 15px;
     color: #5e6cb1;
