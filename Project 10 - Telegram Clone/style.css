@@ -14,6 +14,7 @@ body {
     height: 100vh;
     overflow: hidden;
     background-color: #282A36;
+    display: flex;
 }
 
 /* =-=-=-=-= Menu =-=-=-=-= */
@@ -72,4 +73,111 @@ nav ul li span {
 
 .menuSelectedText {
     color: #ec84de;
+}
+
+/* =-=-=-=-= Chats list =-=-=-=-= */
+.chatsList {
+    width: 280px;
+    background-color: #191f3b2c;
+}
+
+.chatsList input {
+    width: 90%;
+    height: 40px;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 10px 15px;
+    border-bottom: 2px solid #434655;
+    background-color: #353641;
+}
+
+.chatsList .chats {
+    overflow: hidden scroll;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+}
+
+.chatsList .chats::-webkit-scrollbar {
+    width: 5px;
+    background-color: #5e6cb148;
+    border-radius: 10px;
+    display: none;
+}
+
+.chatsList .chats::-webkit-scrollbar-thumb {
+    background-color: #7886c9;
+    border-radius: 10px;
+}
+
+.chatsList .chats:hover::-webkit-scrollbar {
+    display: block;
+    position: absolute;
+}
+
+.chatsList .chats .chat:nth-child(2) {
+    background-color: #434655;
+}
+
+.chatsList .chats .chat:hover {
+    background-color: #434655;
+    cursor: pointer;
+}
+
+.chatsList .chats .chat {
+    height: 70px;
+    padding: 10px 15px;
+    display: grid;
+    grid-template-columns: 60px 1fr 40px;
+}
+
+.chatsList .chats .chat img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background-color: rgb(54, 54, 54);
+}
+
+.chatsList .chats .chat .nameAndText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.5px 0;
+}
+
+.chatsList .chats .chat .nameAndText h1{
+    font-size: 15px;
+    color: rgba(255, 255, 0, 0.815);
+}
+
+.chatsList .chats .chat .nameAndText span {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.chatsList .chats .chat .hour {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 2.5px 0;
+}
+.chatsList .chats .chat .hour span {
+    font-size: 15px;
+    color: #5e6cb1;
+}
+
+.chatsList .chats .chat .hour span:last-child {
+    background-color: #7886c9;
+    width: 25px;
+    height: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
 }
