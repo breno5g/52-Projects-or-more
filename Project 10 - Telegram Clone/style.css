@@ -1,11 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     border: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    background-color: #282A36;
+}
+
+/* =-=-=-=-= Menu =-=-=-=-= */
+nav {
+    width: 70px;
+    height: 100%;
+}
+
+li {
+    cursor: pointer;
+}
+
+nav ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 5px 0;
+}
+
+nav ul li:nth-child(1){
+    padding-bottom: 0;
+}
+
+nav ul li:nth-child(1) a {
+    margin-top: 10%;
+}
+
+nav ul li a{
+    font-size: 30px;
+    background-color: transparent;
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a i {
+    color: rgba(255, 255, 255, 0.329);
+    font-size: 26px;
+}
+
+nav ul li span {
+    padding: 3px 0;
+    font-size: 11px;
+    font-weight: 900;
+    color: rgb(228, 228, 2);
+    user-select: none;
+}
+
+.menuSelectedIcon {
+    color: #c79bf0;
+    background-color: #434655;
+}
+
+.menuSelectedText {
+    color: #ec84de;
 }
