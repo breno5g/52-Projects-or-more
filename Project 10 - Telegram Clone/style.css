@@ -191,6 +191,10 @@ nav ul li span {
 }
 
 /* =-=-=-=-= Message =-=-=-=-= */
+.message {
+    position: relative;;
+}
+
 .message header {
     height: 50px;
     padding: 10px 30px;
@@ -224,4 +228,41 @@ nav ul li span {
 
 .message header .icons span:hover i{
     color:#9324dd;
-} 
+}
+
+.message .center {
+    height: 100%;
+    background-image: url(assets/wallpaper.png);
+    background-size: cover;
+}
+
+.message .sendMessage {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #252837;
+    display: grid;
+    grid-template-columns: 10px 1fr 10px 10px;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.message .sendMessage span i {
+    font-size: 20px;
+    color: #5e6cb1;
+}
+
+.message .sendMessage input {
+    height: 25px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: transparent;
+    outline: none;
+}
+
+.message .sendMessage input::placeholder {
+    color: #5e6cb1;
+}
+
