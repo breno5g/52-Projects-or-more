@@ -252,6 +252,11 @@ nav ul li span {
 .message .sendMessage span i {
     font-size: 20px;
     color: #5e6cb1;
+    cursor: pointer;
+}
+
+.message .sendMessage span i:hover {
+    color:#9324dd;
 }
 
 .message .sendMessage input {
@@ -265,4 +270,3 @@ nav ul li span {
 .message .sendMessage input::placeholder {
     color: #5e6cb1;
 }
-
