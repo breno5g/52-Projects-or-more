@@ -5,3 +5,45 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader {
+    height: 350px;
+    width: 350px;
+    position: relative;
+}
+
+.loader div:nth-child(1) {
+    background-color: #dd1c4b;
+    height: 200px;
+    width: 125px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    right: 0;
+    transform: rotate(45deg);
+    border-radius: 100px 100px 10px 10px;
+    transform-origin: 50% 69%;
+}
+
+.loader div:nth-child(2) {
+    background-color: #dd1c4b;
+    height: 200px;
+    width: 125px;
+    position: absolute;
+    margin: auto;
+    top: 151px;
+    left: 132px;
+    transform: rotate(135deg);
+    transform-origin: 50% 31%;
+    border-radius: 10px 10px 100px 100px;
+}
