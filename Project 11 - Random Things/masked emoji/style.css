@@ -4,7 +4,40 @@
 }
 
 body {
+    height: 100vh;
     background-color: rgb(66, 58, 57);
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.emoji {
+    width: 300px;
+    height: 300px;
+    background-image: radial-gradient(
+        #feca3e 58%,
+        #ff8000 80%
+    );
+    border-radius: 50%;
+    position: relative;
+}
+
+.emoji::before,
+.emoji::after {
+    content: "";
+    height: 45px;
+    width: 32px;
+    background-color: #663d0f;
+    position: absolute;
+    box-shadow: 0 -6px #4d2e08;
+    border-radius: 50%;
+    top: 90px;
+}
+
+.emoji::before {
+    left: 80px;
+}
+
+.emoji::after {
+    right: 80px;
+}
