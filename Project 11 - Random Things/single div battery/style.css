@@ -6,3 +6,48 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #282833;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.battery {
+    width: 225px;
+    height: 110px;
+    border: 8px solid #FFF;
+    border-radius: 12px;
+    position: relative;
+}
+
+.battery::before {
+    content: "";
+    position: absolute;
+    margin: auto;
+    height: 55px;
+    width: 22px;
+    background-color: #FFF;
+    right: -25px;
+    top: 0;
+    bottom: 0;
+    border-radius: 0 7px 7px 0;
+}
+
+.battery::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    background-color: #FFF;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    border-radius: 5px;
+    box-shadow: 50px 0 #FFF,
+                100px 0 #FFF,
+                150px 0 #FFF;
+}
