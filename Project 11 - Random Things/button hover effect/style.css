@@ -32,6 +32,7 @@ button::after {
     height: 100%;
     background-color: #E8EBF0;
     border: 5px solid #202538;
+    transition: 0.3s;
 }
 
 button::before {
@@ -52,4 +53,16 @@ button::after {
     top: -15px;
     right: -15px;
     z-index: 1;
+}
+
+button:hover::before {
+    bottom: -5px;
+    left: -5px;
+}
+
+button:hover::after {
+    top: -5px;
+    right: -5px;
+    background-color: #202538;
+    color: #E8EBF0;
 }
