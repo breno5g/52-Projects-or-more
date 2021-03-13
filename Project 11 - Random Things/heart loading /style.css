@@ -33,6 +33,19 @@ body {
     transform: rotate(45deg);
     border-radius: 100px 100px 10px 10px;
     transform-origin: 50% 69%;
+    animation: flip1 4s linear infinite;
+}
+
+@keyframes flip1 {
+    25% {
+        transform: rotate(45deg) rotateX(180deg);
+    }
+    50% {
+        transform: rotate(45deg) rotateX(180deg);
+    }
+    75% {
+        transform: rotate(45deg);
+    }
 }
 
 .loader div:nth-child(2) {
@@ -46,4 +59,17 @@ body {
     transform: rotate(135deg);
     transform-origin: 50% 31%;
     border-radius: 10px 10px 100px 100px;
+    animation: flip2 4s 1s linear infinite;
+}
+
+@keyframes flip2 {
+    25% {
+        transform: rotate(135deg) rotateX(180deg);
+    }
+    50% {
+        transform: rotate(135deg) rotateX(180deg);
+    }
+    75% {
+        transform: rotate(135deg);
+    }
 }
