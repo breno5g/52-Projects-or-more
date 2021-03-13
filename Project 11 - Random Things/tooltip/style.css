@@ -3,5 +3,103 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #202538;
+}
+
+.navigation {
+    position: relative;
+    width: 70px;
+    height: 300px;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.navigation ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    border-radius: 10px;
+    width: 70px;
+    height: 60px;
+    border: 4px solid #FFF;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.navigation ul li:hover {
+    background-color: #0077ff;
+}
+
+.navigation ul li a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-decoration: none;
+    color: #0077ff;
+    font-weight: 500;
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    line-height: 60px;
+    text-align: center;
+}
+
+.navigation ul li a .icon .fa {
+    font-size: 24px;
+}
+
+.navigation ul li:hover a .icon {
+    color: #FFF;
+}
+
+.navigation ul li a .title {
+    position: absolute;
+    left: 70px;
+    display: block;
+    background-color: #FFF;
+    width: auto;
+    padding: 5px 10px;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.navigation ul li a .title::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #FFF;
+    top: 35%;
+    left: -5px;
+    transform: rotate(45deg);
+}
+
+.navigation ul li:hover a .title {
+    transform: translateX(10px);
+    visibility: visible;
+    opacity: 100;
 }
