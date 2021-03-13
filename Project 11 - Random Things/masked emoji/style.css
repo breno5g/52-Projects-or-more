@@ -77,3 +77,17 @@ body {
     top: 30px;
     left: -51px;
 }
+
+.details {
+    height: 15px;
+    width: 180px;
+    background-color: #a1ddf4;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 20px;
+    border-radius: 0 0 50% 50%;
+    box-shadow: 0 25px #a1ddf4,
+                0 50px #a1ddf4;
+}
