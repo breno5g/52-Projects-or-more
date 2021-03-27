@@ -22,3 +22,27 @@ body {
                 inset -10px 0 #0003;
     position: relative;
 }
+
+.top-bar {
+    width: 100%;
+    height: 35px;
+    border-bottom: 5px solid #522433;
+    position: relative;
+} 
+
+.top-bar::before,
+.top-bar::after {
+    content: "";
+    width: 5px;
+    height: 100%;
+    background-color: #522433;
+    position: absolute;
+}
+
+.top-bar::before {
+    left: 25px;
+}
+
+.top-bar::after {
+    right: 25px;
+}
