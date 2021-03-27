@@ -15,7 +15,7 @@ body {
 .gameboy {
     background-color: #b6f3fd;
     width: 320px;
-    height: 550px;
+    height: 590px;
     border-radius: 20px 20px 50px 20px;
     border: 5px solid #522433;
     box-shadow: inset 10px 0 rgba(255, 255, 255, 0.705),
@@ -28,6 +28,7 @@ body {
     height: 35px;
     border-bottom: 5px solid #522433;
     position: relative;
+    box-shadow: 0 5px 0 #0003;
 } 
 
 .top-bar::before,
@@ -53,7 +54,7 @@ body {
     border: 5px solid #522433;
     margin: 30px 0 0 30px;
     border-radius: 10px 10px 30px 10px;
-    background-color: #886571;
+    background-color: #8b6f6b;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,3 +116,53 @@ body {
     width: 60px;
 }
 
+.arrows {
+    width: 120px;
+    height: 120px;
+    border: 5px solid #522433;
+    position: relative;
+    top: 30px;
+    left: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9297ac;
+}
+
+.arrows::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: #8b6f6b;
+}
+
+.arrows .top-arrow,
+.arrows .right-arrow,
+.arrows .left-arrow,
+.arrows .bottom-arrow {
+    width: 30px;
+    height: 30px;
+    border:5px solid #522433;
+    background-color: #8b6f6b;
+    position: absolute;
+    box-shadow: inset 0 5px 0 #FFF;
+}
+
+.arrows .top-arrow {
+    border-bottom: none;
+    top: 15px;
+}
+.arrows .right-arrow {
+    border-left: none;
+    right: 15px;
+}
+.arrows .left-arrow {
+    border-right: none;
+    left: 15px;
+}
+.arrows .bottom-arrow {
+    border-top: none;
+    bottom: 15px;
+    box-shadow: inset 0 -5px 0 #0003;
+}
