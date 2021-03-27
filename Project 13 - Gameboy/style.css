@@ -79,6 +79,16 @@ body {
     width: 40px;
 }
 
+.screen span {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(230, 84, 84);
+    position: absolute;
+    left: 10px;
+    border-radius: 50%;
+    border: 1px solid #522433;
+}
+
 .screen .glass {
     width: 185px;
     height: 185px;
