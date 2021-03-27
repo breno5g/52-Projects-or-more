@@ -53,5 +53,18 @@ body {
     border: 5px solid #522433;
     margin: 30px 0 0 30px;
     border-radius: 10px 10px 30px 10px;
-    background-color: #a07c88;
+    background-color: #886571;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.screen .glass {
+    width: 185px;
+    height: 185px;
+    border: 5px solid #522433;
+    background-color: #9ddb85;
+    box-shadow: inset 5px 5px 0 0 rgba(0, 0, 0, .2);
+    position: relative;
+}
+
