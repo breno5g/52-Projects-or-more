@@ -57,6 +57,26 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+.screen::before,
+.screen::after {
+    content: "";
+    height: 3px;
+    width: 120px;
+    background-color: #522433;
+    position: absolute;
+    top: 12px;
+}
+
+.screen::before {
+    left: 10px;
+}
+
+.screen::after {
+    right: 10px;
+    width: 40px;
 }
 
 .screen .glass {
