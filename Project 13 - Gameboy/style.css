@@ -3,3 +3,22 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(165, 189, 221);
+}
+
+.gameboy {
+    background-color: #b6f3fd;
+    width: 320px;
+    height: 550px;
+    border-radius: 20px 20px 50px 20px;
+    border: 5px solid #522433;
+    box-shadow: inset 10px 0 rgba(255, 255, 255, 0.705),
+                inset -10px 0 #0003;
+    position: relative;
+}
