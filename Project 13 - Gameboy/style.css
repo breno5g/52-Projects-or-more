@@ -195,6 +195,34 @@ body {
     background-color: #e65454;
     border-radius: 50%;
     border: 5px solid #522433;
-    box-shadow: inset 5px 0 0 #FFF,
+    box-shadow: inset 4px 0 0 #FFF9,
                 inset -5px 0 0 #0003;
+    outline: none;
+}
+
+.start-reset {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    margin: auto;
+    top: 35px;
+    left: 0;
+    right: 0;
+}
+
+.start-reset::before,
+.start-reset::after {
+    content: "";
+    width: 40px;
+    height: 8px;
+    background-color: #9297ac;
+    border: 5px solid #522433;
+    position: absolute;
+    transform: rotate(-30deg);
+    border-radius: 10px;
+    box-shadow: inset 0 3px 0 #FFF;
+}
+
+.start-reset::after {
+    right: 0;
 }
