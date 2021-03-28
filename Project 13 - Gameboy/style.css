@@ -226,3 +226,19 @@ body {
 .start-reset::after {
     right: 0;
 }
+
+.dots {
+    position: absolute; 
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center 
+}
+
+.dots span {
+    line-height: 0;
+    letter-spacing: 5px;
+    color: #522433;
+    font-weight: 900;
+    font-size: 18px;
+}
