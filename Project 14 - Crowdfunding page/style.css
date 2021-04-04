@@ -353,7 +353,7 @@ header menu ul li:hover {
 
 .modal .card{
     margin-top: 20px;
-    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.26);
+    box-shadow: 0 0 2px 0 #00000042;
     padding: 20px;
     border-radius: 5px;
     position: relative;
@@ -425,12 +425,6 @@ header menu ul li:hover {
     display: none;
     align-items: center;
     justify-content: space-between;
-    transition: all 0.3s;
-}
-
-.show {
-    opacity: 100%;
-    transform: translateY(0);
 }
 
 .modal .card .bottom span:nth-child(2) {
