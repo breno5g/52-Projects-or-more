@@ -116,11 +116,17 @@ section .project .btn button {
     font-size: 16px;
     font-weight: 700;
     cursor: pointer;
+    transition: all 0.3s;
+    outline: none;
 }
 
 section .project .btn button:nth-child(1) {
-    background-color: hsl(176, 50%, 47%);
+    background-color: #3cb4ac;
     color: white;
+}
+
+section .project .btn button:nth-child(1):hover {
+    background-color: #35948e;
 }
 
 section .project .btn button:nth-child(2) {
@@ -141,4 +147,10 @@ section .project .btn button:nth-child(2) i {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    transition: all 0.3s;
+}
+
+section .project .btn button:nth-child(2):hover i {
+    background-color: #312f2f;
+    color: #80bbf1;
 }
