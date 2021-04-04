@@ -203,3 +203,87 @@ section .contributions .progress::after {
     background-color: #3cb4ac;
     border-radius: 10px;
 }
+
+/* =-=-=-=-= About =-=-=-=-= */
+
+section .about h1 {
+    font-size: 20px;
+    color: #424242;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+section .about p {
+    font-size: 16px;
+    color: #7a7a7a;
+    line-height: 23px;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+section .about .card {
+    padding: 30px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.411);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+section .about .card .top {
+    display: flex;
+    justify-content: space-between;
+}
+
+section .about .card .top h1 {
+    font-size: 18px;
+    color: #3a3939;
+    font-weight: 700;
+}
+
+section .about .card .top span {
+    color: #3cb4ac;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+section .about .card .middle p {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+section .about .card .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .about .card .bottom h3 {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+section .about .card .bottom h3 span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #7a7a7a;
+    margin-left: 10px;
+}
+
+section .about .card .bottom button {
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+    outline: none;
+    background-color: #3cb4ac;
+    color: white;
+}
+
+section .about .card .bottom  button:hover {
+    background-color: #35948e;
+}
