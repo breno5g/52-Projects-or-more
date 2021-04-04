@@ -15,7 +15,7 @@ body {
 
 header {
     display: flex;
-    height: 50vh;
+    height: 380px;
     padding: 30px 150px;
     background: url(assets/images/image-hero-desktop.jpg);
 }
@@ -66,7 +66,7 @@ section {
 section .project, 
 section .contributions,
 section .about {
-    width: 50vw;
+    width: 650px;
     padding: 60px 50px 50px;
     position: relative;
     background-color: white;
@@ -286,4 +286,22 @@ section .about .card .bottom button {
 
 section .about .card .bottom  button:hover {
     background-color: #35948e;
+}
+
+section .about .card:nth-child(3) {
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.308);
+    position: relative;
+}
+
+section .about .card:nth-child(3) .top h1,
+section .about .card:nth-child(3) .top span,
+section .about .card:nth-child(3) .middle p,
+section .about .card:nth-child(3) .bottom h3 {
+    opacity: 50%;
+    user-select: none;
+}
+
+section .about .card:nth-child(3) .bottom button {
+    background-color: #7a7a7a4b;
+    cursor: not-allowed;
 }
