@@ -1,6 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
+    font-family: 'Commissioner', sans-serif;
+}
+
+header {
+    display: flex;
+    height: 50vh;
+    padding: 30px 150px;
+    background: url(assets/images/image-hero-desktop.jpg);
+}
+
+header menu {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header menu img {
+    height: 20px;
+}
+
+header menu ul {
+    display: flex;
+    align-items: center;
+}
+
+header menu ul li {
+    list-style: none;
+    margin: 0 10px;
+    font-size: 16px;
+    color: white;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.3s ;
+}
+
+header menu ul li:hover {
+    box-shadow: 0 1px white;
 }
