@@ -151,6 +151,6 @@ section .project .btn button:nth-child(2) i {
 }
 
 section .project .btn button:nth-child(2):hover i {
-    background-color: #312f2f;
+    background-color: #695e5e;
     color: #80bbf1;
 }
