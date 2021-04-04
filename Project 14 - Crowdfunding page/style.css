@@ -353,4 +353,56 @@ header menu ul li:hover {
 
 .modal .card {
     margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.26);
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
 }
+
+.modal .card div:nth-child(1) input{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin: auto;
+    left: 5px;
+    top: 5px;
+}
+
+.modal .card div:nth-child(2) .top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 10px;
+} 
+
+.modal .card div:nth-child(2) .top h3 {
+    font-size: 16px;
+    color: #424242;
+}
+
+.modal .card div:nth-child(2) .top span {
+    font-size: 16px;
+    color: #3cb4ac;
+    font-weight: 500;
+    margin-left: 15px;
+    
+}
+
+.modal .card div:nth-child(2) .top h3:nth-child(3){
+    font-size: 18px;
+    color: #424242;
+    position: absolute;
+    right: 20px;
+    
+}
+
+.modal .card div:nth-child(2) .top h3:nth-child(3) span {
+    font-size: 13px;
+    margin: 0;
+    color: #695e5e;
+    margin-left: 5px;
+}
+
