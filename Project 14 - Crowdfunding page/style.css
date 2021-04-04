@@ -422,9 +422,15 @@ header menu ul li:hover {
     padding: 30px 0;
     border-top: 1px solid #695e5e6c;
     position: relative;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
+    transition: all 0.3s;
+}
+
+.show {
+    opacity: 100%;
+    transform: translateY(0);
 }
 
 .modal .card .bottom span:nth-child(2) {
@@ -450,4 +456,22 @@ header menu ul li:hover {
     font-weight: 700;
     margin-left: 10px;
     border-radius: 20px;
+    outline: none;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.modal .card .bottom button:hover {
+    background-color: #35948e;
+}
+
+
+.modal .disable {
+    opacity: 70%;
+    user-select: none;
+    cursor: not-allowed;
+}
+
+.modal .disable input {
+    pointer-events: none;
 }

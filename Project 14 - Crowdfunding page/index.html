@@ -16,7 +16,7 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body onload="modal()">
   <header>
     <menu>
       <img src="assets/images/logo.svg" alt="Crowdfund">
@@ -128,7 +128,7 @@
         <div class="card">
           <section>
             <div>
-              <input type="radio" name="reward" id="pledge">
+              <input onchange="showPledge(this)" type="radio" name="reward" id="pledge">
             </div>
             <div>
               <div class="top">
@@ -146,7 +146,7 @@
         <div class="card">
           <section>
             <div>
-              <input type="radio" name="reward" id="bamboo">
+              <input onchange="showPledge(this)" type="radio" name="reward" checked id="bamboo">
             </div>
             <div>
               <div class="top">
@@ -176,7 +176,7 @@
         <div class="card">
           <section>
             <div>
-              <input type="radio" name="reward" id="black">
+              <input onchange="showPledge(this)" type="radio" name="reward" id="black">
             </div>
             <div>
               <div class="top">
@@ -202,39 +202,31 @@
               <button>Continue</button>
             </div>
           </div>
+          <div class="card disable">
+            <section>
+              <div>
+                <input onchange="showPledge(this)" type="radio" name="reward" id="mahogany">
+              </div>
+              <div>
+                <div class="top">
+                  <h3>Mahogany Special Edition</h3>
+                  <span>Pledge $200 or more</span>
+                  <h3>0 <span>left</span></h3>
+                </div>
+                <div class="middle">
+                  <p>
+                    You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
+                    to our Backer member list. Shipping is included.
+                  </p>
+                </div>
+            </section>
         </div>
-        <div class="card">
-          <section>
-            <div>
-              <input type="radio" name="reward" id="mahogany">
-            </div>
-            <div>
-              <div class="top">
-                <h3>Mahogany Special Edition</h3>
-                <span>Pledge $200 or more</span>
-                <h3>0 <span>left</span></h3>
-              </div>
-              <div class="middle">
-                <p>
-                  You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
-                  to our Backer member list. Shipping is included.
-                </p>
-              </div>
-          </section>
-            <div class="bottom">
-              <span>
-                Enter your pledge
-              </span>
-              <span>
-                <i>$</i>
-                200
-              </span>
-              <button>Continue</button>
-            </div>
           </div>
         </div>
       </div>
     </div>
   </section>  
+
+  <script src="script.js"></script>
 </body>
 </html>
