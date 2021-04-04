@@ -330,3 +330,27 @@ header menu ul li:hover {
     top: 0;
     left: 0;
 }
+
+.modal .exit {
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    font-weight: 900;
+    user-select: none;
+    cursor: pointer;
+}
+
+.modal h1 {
+    margin-bottom: 20px;
+    color: #3a3939;
+}
+
+.modal span {
+    font-size: 16px;
+    color: #7a7a7a;
+    font-weight: 500;
+}
+
+.modal .card {
+    margin-top: 20px;
+}
