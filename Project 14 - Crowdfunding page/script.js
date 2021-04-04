@@ -10,6 +10,16 @@ function modal() {
     box.children[1].style.display = "flex";
 }
 
+function showModal() {
+    let modal = document.getElementById("modal");
+    modal.style.display = "block"
+}
+
+function exit(e) {
+    let modal = e.parentElement.parentElement;
+    modal.style.display = "none";
+}
+
 function showPledge(e) {
     actualRadio = e.parentElement.parentElement.parentElement;
     allRadio.forEach((e) => {
@@ -19,8 +29,8 @@ function showPledge(e) {
             resetRadio.children[1].style.display = "none";
         }
     });
+    actualRadio.style.boxShadow = "0 0 0 3px #3cb4ac"
     if(actualRadio.children[1]) {
-        actualRadio.style.boxShadow = "0 0 0 3px #3cb4ac"
         actualRadio.children[1].style.display = "flex";
     }   
 }

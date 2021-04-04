@@ -33,7 +33,7 @@
       <h1>Mastercraft Bamboo Monitor Riser</h1>
       <span>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</span>
       <div class="btn">
-        <button>Back this project</button>
+        <button onclick="showModal()">Back this project</button>
         <button><i class="fas fa-bookmark"></i> Bookmark</button>
       </div>
     </div>
@@ -81,7 +81,7 @@
           </div>
           <div class="bottom">
             <h2>101 <span>left</span></h2>
-            <button>Select Reward</button>
+            <button onclick="showModal()">Select Reward</button>
           </div>
         </div>
         <div class="card">
@@ -97,7 +97,7 @@
           </div>
           <div class="bottom">
             <h3>64 <span>left</span></h3>
-            <button>Select Reward</button>
+            <button onclick="showModal()">Select Reward</button>
           </div>
         </div>
         <div class="card">
@@ -119,9 +119,9 @@
       </div>
     </div>
   </section>
-  <section class="background">
+  <section class="background" id="modal">
     <div class="modal">
-      <span class="exit">X</span>
+      <span onclick="exit(this)" class="exit">X</span>
       <h1>Back this project</h1>
       <span>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</span>
       <div class="cards">
