@@ -358,6 +358,7 @@ header menu ul li:hover {
     padding: 20px;
     border-radius: 5px;
     position: relative;
+    cursor: pointer;
 }
 
 .modal .card section {
@@ -385,6 +386,11 @@ header menu ul li:hover {
 .modal .card div:nth-child(2) .top h3 {
     font-size: 16px;
     color: #424242;
+    transition: all 0.3s;
+}
+
+.modal .card div:nth-child(2):hover .top h3 {
+    color: #3cb4ac;
 }
 
 .modal .card div:nth-child(2) .top span {
@@ -471,6 +477,10 @@ header menu ul li:hover {
     pointer-events: none;
 }
 
+.modal .disable div:nth-child(2):hover .top h3 {
+    color: #424242;
+}
+
 /* =-=-=-= Success modal =-=-=-= */
 
 .background2 {
@@ -526,4 +536,9 @@ header menu ul li:hover {
     font-size: 16px;
     outline: none;
     cursor: pointer;
+    transition: all 0.3s;
+}
+
+.success-modal button:hover {
+    background-color: #35948e;
 }
