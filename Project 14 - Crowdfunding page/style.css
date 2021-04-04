@@ -316,7 +316,7 @@ header menu ul li:hover {
     margin: auto;
     top: 0;
     left: 0;
-    display: none;
+    /* display: none; */
 }
 
 .modal {
@@ -469,4 +469,48 @@ header menu ul li:hover {
 
 .modal .disable input {
     pointer-events: none;
+}
+
+/* =-=-=-= Success modal =-=-=-= */
+
+.success-modal {
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    position: absolute;
+    margin: auto;
+    top: 300px;
+    right: 0;
+    left: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 0 #424242;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.success-modal img {
+    width: 100px;
+    height: 100px;
+}
+
+.success-modal h1 {
+    color: #424242;
+}
+
+.success-modal p {
+    color: #7a7a7a;
+    font-weight: 500;
+}
+
+.success-modal button {
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: none;
+    background-color: #3cb4ac;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
 }
