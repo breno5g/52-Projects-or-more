@@ -52,9 +52,9 @@ header menu ul li:hover {
     box-shadow: 0 1px white;
 }
 
-/* =-=-=-= Main section =-=-=-= */
+/* =-=-=-= Main .container =-=-=-= */
 
-section {
+.container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -63,9 +63,9 @@ section {
     gap: 20px;
 }
 
-section .project, 
-section .contributions,
-section .about {
+.container .project, 
+.container .contributions,
+.container .about {
     width: 650px;
     padding: 60px 50px 50px;
     position: relative;
@@ -76,7 +76,7 @@ section .about {
 
 /* =-=-=-= Project =-=-=-=-= */ 
 
-section .project .logo {
+.container .project .logo {
     position: absolute;
     margin: auto;
     top: -30px;
@@ -84,29 +84,29 @@ section .project .logo {
     right: 0;
 }
 
-section .project {
+.container .project {
     text-align: center;
 }
 
-section .project h1 {
+.container .project h1 {
     font-size: 26px;
     letter-spacing: 1.5px;
     margin-bottom: 10px;
 }
 
-section .project span {
+.container .project span {
     font-size: 16px;
     font-weight: 400;
     color: #7a7a7a;
 }
 
-section .project .btn {
+.container .project .btn {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-section .project .btn button {
+.container .project .btn button {
     margin-top: 30px;
     width: 170px;
     height: 50px;
@@ -120,23 +120,23 @@ section .project .btn button {
     outline: none;
 }
 
-section .project .btn button:nth-child(1) {
+.container .project .btn button:nth-child(1) {
     background-color: #3cb4ac;
     color: white;
 }
 
-section .project .btn button:nth-child(1):hover {
+.container .project .btn button:nth-child(1):hover {
     background-color: #35948e;
 }
 
-section .project .btn button:nth-child(2) {
+.container .project .btn button:nth-child(2) {
     color: hsl(0, 0%, 48%);
     text-align: end;
     padding: 0 25px;
     position: relative;
 }
 
-section .project .btn button:nth-child(2) i {
+.container .project .btn button:nth-child(2) i {
     width: 55px;
     height: 55px;
     position: absolute;
@@ -150,43 +150,43 @@ section .project .btn button:nth-child(2) i {
     transition: all 0.3s;
 }
 
-section .project .btn button:nth-child(2):hover i {
+.container .project .btn button:nth-child(2):hover i {
     background-color: #695e5e;
     color: #80bbf1;
 }
 
 /* =-=-=-= Contributions =-=-=-=-= */
 
-section .contributions .values{
+.container .contributions .values{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-section .contributions .values div {
+.container .contributions .values div {
     display: flex;
     flex-direction: column;
     padding: 0 25px;
     text-align: center;
 }
 
-section .contributions .values div:nth-child(2) {
+.container .contributions .values div:nth-child(2) {
     border-left: 1px solid #7a7a7a50;
     border-right: 1px solid #7a7a7a50;
 }
 
-section .contributions .values div span:nth-child(1) {
+.container .contributions .values div span:nth-child(1) {
     font-size: 35px;
     font-weight: 700;
     margin-bottom: 5px;
 }
 
-section .contributions .values div span:nth-child(2) {
+.container .contributions .values div span:nth-child(2) {
     font-size: 15px;
     color: #7a7a7a;
     font-weight: 400;
 }
 
-section .contributions .progress {
+.container .contributions .progress {
     width: 100%;
     height: 10px;
     margin-top: 50px;
@@ -195,7 +195,7 @@ section .contributions .progress {
     position: relative;
 }
 
-section .contributions .progress::after {
+.container .contributions .progress::after {
     content: "";
     position: absolute;
     width: 85%;
@@ -206,14 +206,14 @@ section .contributions .progress::after {
 
 /* =-=-=-=-= About =-=-=-=-= */
 
-section .about h1 {
+.container .about h1 {
     font-size: 20px;
     color: #424242;
     margin-bottom: 30px;
     font-weight: 700;
 }
 
-section .about p {
+.container .about p {
     font-size: 16px;
     color: #7a7a7a;
     line-height: 23px;
@@ -221,55 +221,55 @@ section .about p {
     font-weight: 500;
 }
 
-section .about .card {
+.container .about .card {
     padding: 30px;
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.411);
     margin-bottom: 20px;
     border-radius: 10px;
 }
 
-section .about .card .top {
+.container .about .card .top {
     display: flex;
     justify-content: space-between;
 }
 
-section .about .card .top h1 {
+.container .about .card .top h1 {
     font-size: 18px;
     color: #3a3939;
     font-weight: 700;
 }
 
-section .about .card .top span {
+.container .about .card .top span {
     color: #3cb4ac;
     font-weight: 500;
     font-size: 16px;
 }
 
-section .about .card .middle p {
+.container .about .card .middle p {
     font-size: 16px;
     line-height: 25px;
 }
 
-section .about .card .bottom {
+.container .about .card .bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-section .about .card .bottom h3 {
+.container .about .card .bottom h3 {
     font-size: 25px;
     display: flex;
     align-items: center;
 }
 
-section .about .card .bottom h3 span {
+.container .about .card .bottom h3 span {
     font-size: 16px;
     font-weight: 400;
     color: #7a7a7a;
     margin-left: 10px;
 }
 
-section .about .card .bottom button {
+.container .about .card .bottom button {
     width: 150px;
     height: 50px;
     border-radius: 50px;
@@ -284,24 +284,49 @@ section .about .card .bottom button {
     color: white;
 }
 
-section .about .card .bottom  button:hover {
+.container .about .card .bottom  button:hover {
     background-color: #35948e;
 }
 
-section .about .card:nth-child(3) {
+.container .about .card:nth-child(3) {
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.308);
     position: relative;
 }
 
-section .about .card:nth-child(3) .top h1,
-section .about .card:nth-child(3) .top span,
-section .about .card:nth-child(3) .middle p,
-section .about .card:nth-child(3) .bottom h3 {
+.container .about .card:nth-child(3) .top h1,
+.container .about .card:nth-child(3) .top span,
+.container .about .card:nth-child(3) .middle p,
+.container .about .card:nth-child(3) .bottom h3 {
     opacity: 50%;
     user-select: none;
 }
 
-section .about .card:nth-child(3) .bottom button {
+.container .about .card:nth-child(3) .bottom button {
     background-color: #7a7a7a4b;
     cursor: not-allowed;
+}
+
+/*=-=-=-=-= Modal =-=-=-=-= */
+
+.modal {
+    width: 650px;
+    padding: 60px 50px 50px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    margin: auto;
+    top: 200px;
+    left: 0;
+    right: 0;
+}
+
+.background {
+    width: 100%;
+    height: 350vh;
+    background-color: rgba(124, 124, 124, 0.253);
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
 }
