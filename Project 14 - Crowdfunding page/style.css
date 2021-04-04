@@ -7,6 +7,12 @@
     font-family: 'Commissioner', sans-serif;
 }
 
+body {
+    background-color: whitesmoke;
+}
+
+/* =-=-=-= Header =-=-=-= */
+
 header {
     display: flex;
     height: 50vh;
@@ -24,6 +30,7 @@ header menu {
 
 header menu img {
     height: 20px;
+    user-select: none;
 }
 
 header menu ul {
@@ -43,4 +50,95 @@ header menu ul li {
 
 header menu ul li:hover {
     box-shadow: 0 1px white;
+}
+
+/* =-=-=-= Main section =-=-=-= */
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: -70px;
+    gap: 20px;
+}
+
+section .project, 
+section .contributions,
+section .about {
+    width: 50vw;
+    padding: 60px 50px 50px;
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* =-=-=-= Project =-=-=-=-= */ 
+
+section .project .logo {
+    position: absolute;
+    margin: auto;
+    top: -30px;
+    left: 0;
+    right: 0;
+}
+
+section .project {
+    text-align: center;
+}
+
+section .project h1 {
+    font-size: 26px;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+section .project span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #7a7a7a;
+}
+
+section .project .btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+section .project .btn button {
+    margin-top: 30px;
+    width: 170px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+section .project .btn button:nth-child(1) {
+    background-color: hsl(176, 50%, 47%);
+    color: white;
+}
+
+section .project .btn button:nth-child(2) {
+    color: hsl(0, 0%, 48%);
+    text-align: end;
+    padding: 0 25px;
+    position: relative;
+}
+
+section .project .btn button:nth-child(2) i {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    background-color: #424242;
+    top: -2.5px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
