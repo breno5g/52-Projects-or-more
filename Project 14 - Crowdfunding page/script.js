@@ -15,9 +15,16 @@ function showModal() {
     modal.style.display = "block"
 }
 
+function showSuccess() {
+    let success = document.querySelector(".background2");
+    success.style.display = "block";
+}
+
 function exit(e) {
     let modal = e.parentElement.parentElement;
     modal.style.display = "none";
+    let close = document.getElementById("modal");
+    close.style.display = "none"
 }
 
 function showPledge(e) {
