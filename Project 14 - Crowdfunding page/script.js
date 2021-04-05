@@ -41,3 +41,9 @@ function showPledge(e) {
         actualRadio.children[1].style.display = "flex";
     }   
 }
+
+function check(e) {
+    let box = e.children[0].children[0].children[0];
+    box.checked = true;
+    showPledge(box);
+}
