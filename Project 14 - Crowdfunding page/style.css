@@ -574,13 +574,15 @@ header menu ul li:hover {
         padding: 0 10px;
     }
 
-    header menu ul::after {
+    header menu ul span{
         content: url(assets/images/icon-close-menu.svg);
         position: absolute;
         top: -50px;
         right: 0;
         cursor: pointer;
     }
+
+    
     
     header menu ul li {
         color: #505050;
@@ -590,8 +592,8 @@ header menu ul li:hover {
 
     }
 
-    header menu ul li:nth-child(2)::before, 
-    header menu ul li:nth-child(2)::after {
+    header menu ul li:nth-child(3)::before, 
+    header menu ul li:nth-child(3)::after {
         content: "";
         width: 300px;
         height: 1px;
@@ -600,11 +602,11 @@ header menu ul li:hover {
         left: -20px;
     }
 
-    header menu ul li:nth-child(2)::before {
+    header menu ul li:nth-child(3)::before {
         top: 0;
     }
 
-    header menu ul li:nth-child(2)::after {
+    header menu ul li:nth-child(3)::after {
         bottom: 0;
     }
 
