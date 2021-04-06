@@ -558,7 +558,16 @@ header menu ul li:hover {
         padding: 30px 50px;
         background: url(assets/images/image-hero-mobile.jpg);
         background-size: cover;
-    }
+    }.background2 {
+    width: 100%;
+    height: 350vh;
+    background-color: rgba(124, 124, 124, 0.253);
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    display: none;
+}
     
     /* =-=-=-=-= Menu =-=-=-=-= */
 
@@ -809,5 +818,23 @@ header menu ul li:hover {
     
     .modal .disable div:nth-child(2):hover .top h3 {
         color: #424242;
+    }
+
+    /* =-=-=-=-= Successes modal =-=-=-=-= */
+
+    .success-modal {
+        width: 350px;
+        height: 350px;
+        gap: 30px;
+        padding: 30px;
+    }
+
+    .success-modal img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .success-modal h1 {
+        font-size: 20px;
     }
 }
