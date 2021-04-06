@@ -291,6 +291,7 @@ header menu ul li:hover {
 .container .about .card:nth-child(3) {
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.308);
     position: relative;
+    cursor: not-allowed;
 }
 
 .container .about .card:nth-child(3) .top h1,
@@ -541,4 +542,91 @@ header menu ul li:hover {
 
 .success-modal button:hover {
     background-color: #35948e;
+}
+
+/* =-=-=-=-= Responsiveness =-=-=-=-= */
+
+@media screen and (max-width: 375px){
+    header {
+        display: flex;
+        height: 320px;
+        padding: 30px 50px;
+        background: url(assets/images/image-hero-mobile.jpg);
+        background-size: cover;
+    }
+    
+    header menu img {
+        height: 18px;
+        user-select: none;
+    }
+    
+    header menu ul {
+        width: 300px;
+        height: 200px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        position: absolute;
+        top: 100px;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.055);
+        padding: 0 10px;
+    }
+
+    header menu ul::after {
+        content: url(assets/images/icon-close-menu.svg);
+        position: absolute;
+        top: -50px;
+        right: 0;
+        cursor: pointer;
+    }
+    
+    header menu ul li {
+        color: #505050;
+        font-weight: 700;
+        padding: 20px 0;
+        position: relative;
+
+    }
+
+    header menu ul li:nth-child(2)::before, 
+    header menu ul li:nth-child(2)::after {
+        content: "";
+        width: 300px;
+        height: 1px;
+        background-color: #42424257;
+        position: absolute;
+        left: -20px;
+    }
+
+    header menu ul li:nth-child(2)::before {
+        top: 0;
+    }
+
+    header menu ul li:nth-child(2)::after {
+        bottom: 0;
+    }
+
+    .container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: -100px;
+        gap: 20px;
+        width: 350px;
+    }
+    
+    .container .project, 
+    .container .contributions,
+    .container .about {
+        width: 650px;
+        padding: 60px 50px 50px;
+        position: relative;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.5);
+        display: none;
+    }
 }
