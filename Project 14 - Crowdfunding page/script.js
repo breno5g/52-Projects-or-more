@@ -47,3 +47,24 @@ function check(e) {
     box.checked = true;
     showPledge(box);
 }
+
+/* =-=-=-=-= Responsividade =-=-=-=-= */
+
+function showMenu(e) {
+    let box = e.nextSibling.nextSibling;
+    
+    
+    if (box.classList.contains("menu-hidden")) {
+        e.style.content = "url(assets/images/icon-close-menu.svg)"
+        box.style.visibility = "visible";
+        box.style.opacity = "100%";
+        box.style.transform = "translateY(0px)";
+        box.classList.remove("menu-hidden")
+    } else {
+        e.style.content = "url(assets/images/icon-hamburger.svg)"
+        box.style.visibility = "hidden";
+        box.style.opacity = "0%";
+        box.style.transform = "translateY(-50px)";
+        box.classList.add("menu-hidden")
+    }
+}

@@ -38,6 +38,10 @@ header menu ul {
     align-items: center;
 }
 
+header menu .close-btn {
+    display: none;
+}
+
 header menu ul li {
     list-style: none;
     margin: 0 10px;
@@ -572,14 +576,20 @@ header menu ul li:hover {
         border-radius: 10px;
         box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.055);
         padding: 0 10px;
+        opacity: 0%;
+        visibility: hidden;
+        transform: translateY(-50px);
+        transition: .2s;
     }
 
-    header menu ul span{
-        content: url(assets/images/icon-close-menu.svg);
+    header menu .close-btn{
+        display: block;
+        content: url(assets/images/icon-hamburger.svg);
         position: absolute;
-        top: -50px;
-        right: 0;
+        top: 45px;
+        right: 20px;
         cursor: pointer;
+        user-select: none;
     }
 
     
@@ -592,8 +602,8 @@ header menu ul li:hover {
 
     }
 
-    header menu ul li:nth-child(3)::before, 
-    header menu ul li:nth-child(3)::after {
+    header menu ul li:nth-child(2)::before, 
+    header menu ul li:nth-child(2)::after {
         content: "";
         width: 300px;
         height: 1px;
@@ -602,11 +612,11 @@ header menu ul li:hover {
         left: -20px;
     }
 
-    header menu ul li:nth-child(3)::before {
+    header menu ul li:nth-child(2)::before {
         top: 0;
     }
 
-    header menu ul li:nth-child(3)::after {
+    header menu ul li:nth-child(2)::after {
         bottom: 0;
     }
 
@@ -623,12 +633,6 @@ header menu ul li:hover {
     .container .project, 
     .container .contributions,
     .container .about {
-        width: 650px;
-        padding: 60px 50px 50px;
-        position: relative;
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.5);
-        display: none;
+        width: 330px;
     }
 }
