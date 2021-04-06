@@ -550,7 +550,7 @@ header menu ul li:hover {
 
 /* =-=-=-=-= Responsiveness =-=-=-=-= */
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 600px){
 
     header {
         display: flex;
