@@ -551,6 +551,7 @@ header menu ul li:hover {
 /* =-=-=-=-= Responsiveness =-=-=-=-= */
 
 @media screen and (max-width: 375px){
+
     header {
         display: flex;
         height: 320px;
@@ -559,6 +560,8 @@ header menu ul li:hover {
         background-size: cover;
     }
     
+    /* =-=-=-=-= Menu =-=-=-=-= */
+
     header menu img {
         height: 18px;
         user-select: none;
@@ -620,19 +623,29 @@ header menu ul li:hover {
         bottom: 0;
     }
 
-    .container {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        top: -100px;
-        gap: 20px;
-        width: 350px;
-    }
+    /* =-=-=-=-- Project =-=-=-=-= */
     
     .container .project, 
     .container .contributions,
     .container .about {
         width: 330px;
     }
+    
+    .container .project .btn button:nth-child(1) {
+        width: 170px;
+    }
+    
+    .container .project .btn button:nth-child(2) {
+        width: 0;
+        height: 0;
+        color: #fff;
+    }
+    
+    .container .project .btn button:nth-child(2) i {
+        color: #f0e9e9;
+    }
+    
+    /* =-=-=-=-= contributions =-=-=-=-= */
+    
+    
 }
