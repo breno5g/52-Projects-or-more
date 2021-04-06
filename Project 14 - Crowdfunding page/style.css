@@ -592,6 +592,7 @@ header menu ul li:hover {
         visibility: hidden;
         transform: translateY(-50px);
         transition: .2s;
+        z-index: 20;
     }
 
     header menu .close-btn{
