@@ -646,6 +646,29 @@ header menu ul li:hover {
     }
     
     /* =-=-=-=-= contributions =-=-=-=-= */
-    
-    
+
+    .container .contributions .values{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container .contributions .values div:nth-child(2) {
+        border: none;
+        border-top: 1px solid #7a7a7a50;
+        border-bottom: 1px solid #7a7a7a50;
+        padding: 20px 0;
+    }
+
+    .container .contributions .values div span:nth-child(1) {
+        font-size: 35px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    .container .contributions .values div span:nth-child(2) {
+        font-size: 15px;
+        color: #7a7a7a;
+        font-weight: 400;
+    }
 }
