@@ -637,6 +637,7 @@ header menu ul li:hover {
     .container .contributions,
     .container .about {
         width: 330px;
+        padding: 50px 30px;
     }
     
     .container .project .btn button:nth-child(1) {
@@ -669,7 +670,15 @@ header menu ul li:hover {
     }
 
     /* =-=-=-=-= About =-=-=-=-= */
-    
+
+    .container .about {
+        padding: 60px 20px;
+    }
+
+    .container .about .card {
+        padding: 30px 20px;
+    }
+
     .container .about .card .top {
         display: block;
         margin-bottom: 20px;
@@ -696,8 +705,13 @@ header menu ul li:hover {
 
     /* =-=-=-=-= Modal =-=-=-=-= */
 
+    .background {
+        height: 450vh;
+    }
+
     .modal {
-        width: 300px;
+        width: 340px;
+        padding: 60px 30px;
     }
     
     
