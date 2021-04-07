@@ -18,13 +18,11 @@ header {
     height: 380px;
     padding: 30px 150px;
     background: url(assets/images/image-hero-desktop.jpg);
-    background-size: cover;
-    justify-content: center;
 }
 
 header menu {
     height: 50px;
-    min-width: 1000px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
