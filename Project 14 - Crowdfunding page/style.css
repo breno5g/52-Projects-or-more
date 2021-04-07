@@ -18,6 +18,7 @@ header {
     height: 380px;
     padding: 30px 150px;
     background: url(assets/images/image-hero-desktop.jpg);
+    background-size: cover;
 }
 
 header menu {
