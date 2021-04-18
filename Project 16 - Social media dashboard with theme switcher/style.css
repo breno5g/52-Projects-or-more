@@ -38,7 +38,7 @@ body {
     
 
 .container {
-    width: 75%;
+    max-width: 1000px;
 }
 
 /* =-=-=-= Header -=-=-=-= */
@@ -303,7 +303,7 @@ body {
 }
 
 .container .overview .overviewsContainer .box .left-side, 
-.container .overview .overviewsContainer .box .left-side {
+.container .overview .overviewsContainer .box .right-side {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -319,11 +319,11 @@ body {
     font-weight: 700;
 }
 
-.container .overview .overviewsContainer .box .left-side {
+.container .overview .overviewsContainer .box .right-side {
     align-items: flex-end;
 }
 
-.container .overview .overviewsContainer .box .left-side span:last-of-type {
+.container .overview .overviewsContainer .box .right-side span:last-of-type {
     font-size: 12px;
     font-weight: 700;
 }
