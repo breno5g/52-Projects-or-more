@@ -322,3 +322,8 @@ body {
     font-size: 12px;
     font-weight: 700;
 }
+
+.attribution {
+    font-size: 12px;
+    margin-bottom: 25px;
+}
