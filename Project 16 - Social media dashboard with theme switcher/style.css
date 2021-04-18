@@ -32,6 +32,7 @@ body {
     display: flex;
     justify-content: center;
     color: var(--text);
+    overflow-x: hidden;
 }
 
 .container {
@@ -113,6 +114,17 @@ body {
 .container header .left-side .switch  input:checked + .slider::before {
     transform: translateX(-22px);
     background-color: #FFF;
+}
+
+.container header::before {
+    content: "";
+    width: 100vw;
+    height: 250px;
+    background-color: var(--headerbg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1 ;
 }
 
 /* =-=-=-= Cards =-=-=-=-= */
@@ -260,6 +272,7 @@ body {
 /* =-=-=-= Overview =-=-=-= */
 .container .overview {
     margin-top: 30px;
+    margin-bottom: 25px;
 }
 
 .container .overview h1 {
