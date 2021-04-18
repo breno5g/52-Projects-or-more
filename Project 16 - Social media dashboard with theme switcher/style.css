@@ -95,7 +95,10 @@ body {
     border-radius: 25px;
     cursor: pointer;
     transform: translateY(-2px);
+    transition: 0.3s ease-in-out;
 }
+
+
 
 .container header .right-side .switch .slider::before {
     content: "";
@@ -151,6 +154,7 @@ body {
     overflow: hidden;
     position: relative;
     transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .container .socialMediaCards .card::after {
@@ -300,6 +304,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .container .overview .overviewsContainer .box .left-side, 
@@ -331,4 +336,14 @@ body {
 .attribution {
     font-size: 12px;
     margin-bottom: 25px;
+}
+
+input:checked + .slider:hover,
+.card:hover,
+.box:hover{
+    filter: invert(10%);
+}
+
+input:not(:checked) + .slider:hover {
+    filter: brightness(120%);
 }
