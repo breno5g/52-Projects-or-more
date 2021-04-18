@@ -6,3 +6,25 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
+
+:root {
+    /* Dark mode default */
+    --bg: #1e202a;
+    --headerbg: #1f212e;
+    --cardbg: #252a41;
+    --lighttext: #8b97c6;
+    --text: #ffffff;
+
+    /* Primary colors */
+    --profit: #1db489;
+    --loss: #dc414c;
+
+    --facebook: hsl(208, 92%, 53%)
+    --Twitter: hsl(203, 89%, 53%)
+    --instagram: linear-gradient(90deg, #fdc468 0%, #df4996 100%)
+    --youTube: hsl(348, 97%, 39%)
+}
+
+body {
+    background-color: var(--bg);
+}
