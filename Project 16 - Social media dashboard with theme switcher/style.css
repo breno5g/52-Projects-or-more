@@ -49,44 +49,45 @@ body {
     padding: 25px 0;
 }
 
-.container header .right-side {
+.container header .left-side {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.container header .right-side h1 {
+.container header .left-side h1 {
     font-size: 32px;
 }
 
-.container header .right-side h2 {
+.container header .left-side h2 {
     font-size: 14px;
     color: var(--lighttext);
     letter-spacing: 2px;
     font-weight: 700;
 }
 
-.container header .left-side {
+.container header .right-side {
     position: relative;
+    transform: translateX(-60%);
 }
 
-.container header .left-side span {
+.container header .right-side span {
     color: var(--lighttext);
     font-weight: 700;
     margin-right: 10px;
 }
 
-.container header .left-side input {
+.container header .right-side input {
     opacity: 0;
     height: 0;
     width: 0;
 }
 
-.container header .left-side .switch {
+.container header .right-side .switch {
     position: relative;
 }
 
-.container header .left-side .switch .slider {
+.container header .right-side .switch .slider {
     position: absolute;
     height: 26px;
     width: 50px;
@@ -96,7 +97,7 @@ body {
     transform: translateY(-2px);
 }
 
-.container header .left-side .switch .slider::before {
+.container header .right-side .switch .slider::before {
     content: "";
     position: absolute;
     top: 3px;
@@ -109,11 +110,11 @@ body {
 
 }
 
-.container header .left-side .switch  input:checked + .slider {
+.container header .right-side .switch  input:checked + .slider {
     background: #aeb3cb;
 }
 
-.container header .left-side .switch  input:checked + .slider::before {
+.container header .right-side .switch  input:checked + .slider::before {
     transform: translateX(-22px);
     background-color: #FFF;
 }
@@ -134,12 +135,12 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 25px;
+    gap: 20px;
 }
 
 .container .socialMediaCards .card {
-    width: 250px;
-    height: 250px;
+    width: 230px;
+    height: 230px;
     background-color: var(--cardbg);
     padding: 20px;
     display: flex;
@@ -292,7 +293,7 @@ body {
 
 .container .overview .overviewsContainer .box {
     background-color: var(--cardbg);
-    width: 250px;
+    width: 230px;
     height: 125px;
     padding: 20px;
     border-radius: 5px;
@@ -302,7 +303,7 @@ body {
 }
 
 .container .overview .overviewsContainer .box .left-side, 
-.container .overview .overviewsContainer .box .right-side {
+.container .overview .overviewsContainer .box .left-side {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -318,11 +319,11 @@ body {
     font-weight: 700;
 }
 
-.container .overview .overviewsContainer .box .right-side {
+.container .overview .overviewsContainer .box .left-side {
     align-items: flex-end;
 }
 
-.container .overview .overviewsContainer .box .right-side span:last-of-type {
+.container .overview .overviewsContainer .box .left-side span:last-of-type {
     font-size: 12px;
     font-weight: 700;
 }
