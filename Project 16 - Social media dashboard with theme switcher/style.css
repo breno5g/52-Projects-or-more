@@ -207,6 +207,14 @@ body {
     left: -15px;
 }
 
+.icon.profit {
+    color: var(--profit);
+}
+
+.icon.loss {
+    color: var(--loss);
+}
+
 .container .socialMediaCards .card .tag {
     display: flex;
     gap: 10px;
@@ -251,7 +259,7 @@ body {
 
 /* =-=-=-= Overview =-=-=-= */
 .container .overview {
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 .container .overview h1 {
@@ -260,7 +268,7 @@ body {
 }
 
 .container .overview .overviewsContainer {
-    margin-top: 20px;
+    margin-top: 25px;
     display: grid;
     grid-template: 1fr 1fr / repeat(4, 1fr);
     gap: 20px;
@@ -268,4 +276,36 @@ body {
 
 .container .overview .overviewsContainer .box {
     background-color: var(--cardbg);
+    width: 250px;
+    height: 125px;
+    padding: 20px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container .overview .overviewsContainer .box .left-side, 
+.container .overview .overviewsContainer .box .right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} 
+
+.container .overview .overviewsContainer .box .left-side span:nth-child(1){
+    font-size: 16px;
+    color: var(--lighttext);
+}
+
+.container .overview .overviewsContainer .box .left-side span:nth-child(2){
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.container .overview .overviewsContainer .box .right-side {
+    align-items: flex-end;
+}
+
+.container .overview .overviewsContainer .box .right-side span:last-of-type {
+    font-size: 12px;
+    font-weight: 700;
 }
