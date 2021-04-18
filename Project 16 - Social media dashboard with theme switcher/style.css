@@ -13,6 +13,7 @@
     --headerbg: #1f212e;
     --cardbg: #252a41;
     --lighttext: #8b97c6;
+
     --text: #ffffff;
 
     --switch: linear-gradient(90deg, #378fe6 0%, #3eda82 100%);
@@ -34,6 +35,7 @@ body {
     color: var(--text);
     overflow-x: hidden;
 }
+    
 
 .container {
     width: 75%;
@@ -147,6 +149,7 @@ body {
     border-radius: 5px;
     overflow: hidden;
     position: relative;
+    transition: 0.2s ease-in-out;
 }
 
 .container .socialMediaCards .card::after {
@@ -295,6 +298,7 @@ body {
     border-radius: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    transition: 0.2s ease-in-out;
 }
 
 .container .overview .overviewsContainer .box .left-side, 
