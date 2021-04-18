@@ -186,23 +186,25 @@ body {
 }
 
 .icon {
-    display: inline-block;
-    width: 7px;
-    height: 7px;
-    background-size: cover;
-    background-repeat: none;
+    position: relative;
 }
 
-.icon.profit {
-    background-image: url(assets/images/icon-up.svg);
-    transform-origin: center;
-    transform: rotate(-135deg) translateY(-2px);
+.icon.profit::after {
+    content: url(assets/images/icon-up.svg);
+    width: 10px;
+    height: 5px;
+    position: absolute;
+    top: -3px;
+    left: -15px;
 }
 
-.icon.loss {
-    background-image: url(assets/images/icon-down.svg);
-    transform-origin: center;
-    transform: rotate(135deg) translateY(2px);
+.icon.loss::after {
+    content: url(assets/images/icon-down.svg);
+    width: 10px;
+    height: 5px;
+    position: absolute;
+    top: -2px;
+    left: -15px;
 }
 
 .container .socialMediaCards .card .tag {
@@ -245,4 +247,25 @@ body {
 
 .container .socialMediaCards .card .today.loss span{
     color: var(--loss);
+}
+
+/* =-=-=-= Overview =-=-=-= */
+.container .overview {
+    margin-top: 25px;
+}
+
+.container .overview h1 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.container .overview .overviewsContainer {
+    margin-top: 20px;
+    display: grid;
+    grid-template: 1fr 1fr / repeat(4, 1fr);
+    gap: 20px;
+}
+
+.container .overview .overviewsContainer .box {
+    background-color: var(--cardbg);
 }
