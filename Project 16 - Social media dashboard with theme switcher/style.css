@@ -85,6 +85,7 @@ body {
 
 .container header .right-side .switch {
     position: relative;
+    display: inline-block;
 }
 
 .container header .right-side .switch .slider {
@@ -377,6 +378,7 @@ input:not(:checked) + .slider:hover {
 
    .container header .right-side .switch {
        right: 50px;
+       display: inline-block;
     }
 
     .container .socialMediaCards {
