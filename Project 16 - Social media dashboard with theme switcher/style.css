@@ -35,7 +35,7 @@ body {
     color: var(--text);
     overflow-x: hidden;
 }
-    
+
 
 .container {
     max-width: 1000px;
@@ -163,20 +163,20 @@ body {
     height: 5px;
     position: absolute;
     top: 0;
-} 
+}
 
 .container .socialMediaCards .card.fb::after {
     background: var(--facebook);
-} 
+}
 .container .socialMediaCards .card.tt::after {
     background: var(--Twitter);
-} 
+}
 .container .socialMediaCards .card.insta::after {
     background: var(--instagram);
-} 
+}
 .container .socialMediaCards .card.yt::after {
     background: var(--youTube);
-} 
+}
 
 /* =-=-= set icons =-=-= */
 .fb-icon, .tt-icon, .insta-icon, .yt-icon {
@@ -307,12 +307,12 @@ body {
     cursor: pointer;
 }
 
-.container .overview .overviewsContainer .box .left-side, 
+.container .overview .overviewsContainer .box .left-side,
 .container .overview .overviewsContainer .box .right-side {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-} 
+}
 
 .container .overview .overviewsContainer .box .left-side span:nth-child(1){
     font-size: 16px;
@@ -346,4 +346,56 @@ input:checked + .slider:hover,
 
 input:not(:checked) + .slider:hover {
     filter: brightness(120%);
+}
+
+@media screen and (max-width: 600px) {
+   .container {
+       width: 90%;
+   }
+
+   .container header {
+       flex-direction: column;
+   }
+
+   .container header .left-side {
+       border-bottom: 1px solid rgba(255, 255, 255, 0.144);
+       padding-bottom: 10px;
+       width: 100%;
+   }
+
+   .container header .left-side h1 {
+       font-size: 26px;
+   }
+
+   .container header .right-side {
+       display: flex;
+       width: 100%;
+       transform: translateX(0);
+       margin-top: 20px;
+       justify-content: space-between;
+   }
+
+   .container header .right-side .switch {
+       right: 50px;
+    }
+
+    .container .socialMediaCards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .socialMediaCards .card {
+        width: 100%;
+    }
+
+    .container .overview .overviewsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container .overview .overviewsContainer .box {
+        width: 100%;
+    }
 }
