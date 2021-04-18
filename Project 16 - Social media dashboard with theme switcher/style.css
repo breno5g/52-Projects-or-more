@@ -27,4 +27,34 @@
 
 body {
     background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+    color: var(--text);
+}
+
+.container {
+    width: 75%;
+}
+
+.container header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.container header .right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container header .right-side h1 {
+    font-size: 32px;
+}
+
+.container header .right-side h2 {
+    font-size: 14px;
+    color: var(--lighttext);
+    letter-spacing: 2px;
 }
