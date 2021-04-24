@@ -38,7 +38,7 @@ body {
 /* =-=-=-= Header =-=-=-= */
 
 .todoApp {
-    width: 450px;
+    width: 500px;
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -198,4 +198,47 @@ body {
     align-items: center;
     padding-left: 10px;
     color: var(--text);
+}
+
+/* =-=-=-= Filters bar =-=-=-= */
+
+.todoApp .bottomBar {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.todoApp .bottomBar .counter {
+    color: var(--semilighttext);
+    font-size: 12px;
+}
+
+.todoApp .bottomBar button {
+    border: none;
+    background-color: transparent;
+    color: var(--lighttext);
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.todoApp .bottomBar button:hover {
+    filter: brightness(150%);
+}
+
+.todoApp .bottomBar .filters {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.todoApp .bottomBar .filters button:first-child {
+    color: #3a7bfd;
+}
+
+.todoApp .bottomBar .clear button {
+    color: var(--semilighttext);
 }
