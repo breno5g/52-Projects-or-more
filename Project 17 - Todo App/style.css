@@ -7,3 +7,12 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
+:root {
+    --bg: #161722;
+    --cardbg: hsl(235, 24%, 19%);
+    --text: #cacde8;
+    --texthover: #e4e5f1;
+    --lighttext: hsl(234, 11%, 52%);
+    --semilighttext: hsl(233, 14%, 35%);
+    --darktext: hsl(237, 14%, 26%);
+}
