@@ -195,6 +195,7 @@ body {
     align-items: center;
     padding-left: 10px;
     color: var(--text);
+    font-size: 18px;
 }
 
 /* =-=-=-= Filters bar =-=-=-= */

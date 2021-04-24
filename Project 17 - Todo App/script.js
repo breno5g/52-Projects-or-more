@@ -1,4 +1,9 @@
-let todoList = [];
+let todoList = [
+  {id: 0, text: "primeiro"},
+  {id: 1, text: "segundo"},
+  {id: 2, text: "terceiro"},
+];
+
 let todoContainer = document.querySelector(".todos");
 
 function createNewTodo(e) {
@@ -14,10 +19,10 @@ function createNewTodo(e) {
 
 function createElements() {
   console.log(todoContainer)
-  for(let i = 0; i < todoList.length; i++) {
+  for(let i = todoList.length - 1; i >= 0; i--) {
     let todo = document.createElement("div");
     todo.classList.add("todo");
-    todo.setAttribute("id", `${todoList[i].id}`)
+    // todo.setAttribute("id", `${todoList[i].id}`)
     let leftSide = document.createElement("div");
     leftSide.classList.add("left-side");
     let checkbox = document.createElement("input");
