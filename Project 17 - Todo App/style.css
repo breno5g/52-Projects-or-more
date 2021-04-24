@@ -70,7 +70,7 @@ body {
 
 .todoApp .createNew {
     width: 100%;
-    height: 50px;
+    min-height: 50px;
     background-color: var(--cardbg);
     display: grid;
     grid-template-columns: 1fr 9fr;
