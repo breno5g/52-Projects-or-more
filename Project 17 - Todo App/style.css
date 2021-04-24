@@ -35,9 +35,14 @@ body {
     z-index: -1;
 }
 
+/* =-=-=-= Header =-=-=-= */
+
 .todoApp {
     width: 450px;
     height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .todoApp header {
@@ -59,5 +64,48 @@ body {
     width: 2.5rem;
     height: 2.5rem;
     background-color: transparent;
+}
 
+/* =-=-=-= Create new todo =-=-=-= */
+
+.todoApp .createNew {
+    width: 100%;
+    height: 50px;
+    background-color: var(--cardbg);
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    border-radius: 5px;
+}
+
+.todoApp .createNew div:first-child{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todoApp .createNew div:first-child button{
+    width: 20px;
+    height: 20px;
+    background: #ffffff46;
+    border-radius: 50%;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+}
+
+.todoApp .createNew div:first-child button::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: var(--cardbg);
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    border-radius: 50%;
+}
+
+.todoApp .createNew div:first-child button:hover {
+    background: linear-gradient(90deg, rgba(87,221,255,1) 0%, rgba(192,88,243,1) 100%);
 }
