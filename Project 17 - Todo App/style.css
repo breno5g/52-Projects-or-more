@@ -124,7 +124,7 @@ body {
 .todoApp .container {
     border-radius: 5px;
     background-color: var(--cardbg);
-    padding: 2px;
+    /* padding: 2px; */
 }
 
 .todoApp .container .todo {
@@ -133,10 +133,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 9fr;
     border-bottom: 1px solid var(--darktext);
-}
-
-.todoApp .container .todo:last-child {
-    border: none;
 }
 
 .todoApp .container .todo .left-side{
@@ -150,6 +146,7 @@ body {
     opacity: 0;
     height: 0;
     width: 0;
+    display: none;
 }
 
 .todoApp .container .todo .left-side label {
@@ -208,6 +205,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 15px;
+    background-color: var(--cardbg);
 }
 
 .todoApp .bottomBar .counter {
