@@ -12,9 +12,9 @@
     --cardbg: hsl(235, 24%, 19%);
     --text: #cacde8;
     --texthover: #e4e5f1;
-    --lighttext: hsl(234, 11%, 52%);
-    --semilighttext: hsl(233, 14%, 35%);
-    --darktext: hsl(237, 14%, 26%);
+    --lighttext: #777a92;
+    --semilighttext: #4d5066;
+    --darktext: #393a4c;
 }
 
 body {
@@ -42,7 +42,7 @@ body {
     height: 500px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
 }
 
 .todoApp header {
@@ -77,14 +77,14 @@ body {
     border-radius: 5px;
 }
 
-.todoApp .createNew div:first-child{
+.todoApp .createNew .left-side{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.todoApp .createNew div:first-child button{
+.todoApp .createNew .left-side button{
     width: 20px;
     height: 20px;
     background: #ffffff46;
@@ -94,7 +94,7 @@ body {
     cursor: pointer;
 }
 
-.todoApp .createNew div:first-child button::after {
+.todoApp .createNew .left-side button::after {
     content: "";
     width: 18px;
     height: 18px;
@@ -105,11 +105,11 @@ body {
     border-radius: 50%;
 }
 
-.todoApp .createNew div:first-child button:hover {
+.todoApp .createNew .left-side button:hover {
     background: linear-gradient(90deg, rgba(87,221,255,1) 0%, rgba(192,88,243,1) 100%);
 }
 
-.todoApp .createNew div:last-child input{
+.todoApp .createNew .right-side input{
     width: 100%;
     height: 100%;
     background-color: transparent;
@@ -118,4 +118,85 @@ body {
     color: var(--text);
     outline: none;
     font-size: 16px;
+}
+
+/* =-=-=-= todo table =-=-=-= */
+.todoApp .container {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.todoApp .container .todo {
+    width: 100%;
+    height: 50px;
+    background-color: var(--cardbg);
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    border-bottom: 1px solid var(--darktext);
+}
+
+.todoApp .container .todo:last-child {
+    border: none;
+}
+
+.todoApp .container .todo .left-side{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todoApp .container .todo .left-side input{
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.todoApp .container .todo .left-side label {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+.todoApp .container .todo .left-side input:checked ~ label {
+    background: linear-gradient(90deg, rgba(87,221,255,1) 0%, rgba(192,88,243,1) 100%);
+}
+
+.todoApp .container .todo .left-side input:not(:checked) ~ label {
+    background-color: #ffffff46;
+}
+
+.todoApp .container .todo .left-side label:hover {
+    background: linear-gradient(90deg, rgba(87,221,255,1) 0%, rgba(192,88,243,1) 100%);
+}
+
+.todoApp .container .todo .left-side input:not(:checked) ~ label::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: var(--cardbg);
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    border-radius: 50%;
+}
+
+.todoApp .container .todo .left-side input:checked ~ label::before {
+    content: "✔";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 1px;
+    right: -2px;
+    border-radius: 50%;
+    color: white;
+}
+
+.todoApp .container .todo .right-side {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: var(--text);
 }

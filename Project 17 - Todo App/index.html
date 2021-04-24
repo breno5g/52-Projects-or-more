@@ -25,11 +25,54 @@
       <button><img src="assets/images/icon-sun.svg" alt="Turn to light mode"></button>
     </header>
     <div class="createNew">
-      <div>
+      <div class="left-side">
         <button></button>
       </div>
-      <div>
+      <div class="right-side">
         <input type="text" placeholder="Create a new todo...">
+      </div>
+    </div>
+    <div class="container">
+      <div class="todos">
+        <div class="todo">
+          <div class="left-side">
+            <input type="checkbox" name="check">
+            <label for="check" onclick="check(this)"></label>
+          </div>
+          <div class="right-side">
+            <span>Brownie</span>
+          </div>
+        </div>
+        <div class="todo">
+          <div class="left-side">
+            <input type="checkbox" name="check">
+            <label for="check" onclick="check(this)"></label>
+          </div>
+          <div class="right-side">
+            <span>Brownie</span>
+          </div>
+        </div>
+        <div class="todo">
+          <div class="left-side">
+            <input type="checkbox" name="check">
+            <label for="check" onclick="check(this)"></label>
+          </div>
+          <div class="right-side">
+            <span>Brownie</span>
+          </div>
+        </div>
+        <div class="todo">
+          <div class="left-side">
+            <input type="checkbox" name="check">
+            <label for="check" onclick="check(this)"></label>
+          </div>
+          <div class="right-side">
+            <span>Brownie</span>
+          </div>
+        </div>
+      </div>
+      <div class="bottomBar">
+
       </div>
     </div>
   </section>
@@ -48,5 +91,21 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/breno5g">Breno Santos</a>.
   </div> -->
+
+  <script>
+    function check(e) {
+      let checkbox = e.parentElement.children[0];
+      let text = e.parentElement.parentElement.children[1].children[0]
+      if (checkbox.checked == true) {
+        checkbox.checked = false;
+        text.style.textDecoration = "none";
+        text.style.color = "#cacde8";
+      } else {
+        checkbox.checked = true;
+        text.style.color = "#4d5066";
+        text.style.textDecoration = "line-through";
+      }
+    }
+  </script>
 </body>
 </html>
