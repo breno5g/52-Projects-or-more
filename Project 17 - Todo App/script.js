@@ -78,10 +78,10 @@ function check(e) {
   if (checkbox.checked == true) {
     checkbox.checked = false;
     text.style.textDecoration = "none";
-    text.style.color = "#777a92";
+    text.style.color = "var(--lighttext)";
   } else {
     checkbox.checked = true;
-    text.style.color = "#4d5066";
+    text.style.color = "var(--semilighttext)";
     text.style.textDecoration = "line-through";
   }
   if (sortMode == "all") {
