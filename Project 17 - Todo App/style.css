@@ -5,11 +5,12 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
+    transition: all 0.5s;
 }
 
 :root {
     --bg: #161722;
-    --cardbg: hsl(235, 24%, 19%);
+    --cardbg: #25273c;
     --text: #cacde8;
     --texthover: #e4e5f1;
     --lighttext: #777a92;
@@ -64,6 +65,7 @@ body {
     width: 2.5rem;
     height: 2.5rem;
     background-color: transparent;
+    cursor: pointer;
 }
 
 /* =-=-=-= Create new todo =-=-=-= */
@@ -87,7 +89,7 @@ body {
 .todoApp .createNew .left-side button{
     width: 25px;
     height: 25px;
-    background: #ffffff46;
+    background: var(--semilighttext);
     border-radius: 50%;
     border: none;
     position: relative;
@@ -162,7 +164,7 @@ body {
 }
 
 .todoApp .container .todo .left-side input:not(:checked) ~ label {
-    background-color: #ffffff46;
+    background-color: var(--lighttext);
 }
 
 .todoApp .container .todo .left-side label:hover {
@@ -198,7 +200,7 @@ body {
     display: flex;
     align-items: center;
     padding-left: 10px;
-    color: var(--text);
+    color: var(--lighttext);
     font-size: 18px;
 }
 
@@ -247,5 +249,5 @@ body {
 }
 
 .todoApp .bottomBar .clear button {
-    color: var(--semilighttext);
+    color: var(--darktext);
 }

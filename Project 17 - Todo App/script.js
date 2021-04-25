@@ -1,13 +1,4 @@
-let todoList = [
-  // {id: 0, text: "primeiro"},
-  // {id: 1, text: "segundo"},
-  // {id: 2, text: "terceiro"},
-  // {id: 4, text: "Sem Paciencia mermão"},
-  // {id: 5, text: "Sem Paciencia mermão"},
-  // {id: 6, text: "Sem Paciencia mermão"},
-  // {id: 7, text: "Sem Paciencia mermão"},
-];
-
+let todoList = [];
 let todoContainer = document.querySelector(".todos");
 
 function createNewTodo(e) {
@@ -97,6 +88,27 @@ function itemsLeft() {
 
 function saveList() {
   localStorage.setItem("todoList", JSON.stringify(todoList));
+}
+
+function changeTheme(e) {
+  if (e.getAttribute("theme") == "dark") {
+    document.documentElement.style.setProperty('--bg', '#fafafa');
+    document.documentElement.style.setProperty('--cardbg', '#e4e5f1');
+    document.documentElement.style.setProperty('--text', '	#d2d3db');
+    document.documentElement.style.setProperty('--lighttext', '	#9394a5');
+    document.documentElement.style.setProperty('--lighttext', '#484b6a');
+    e.setAttribute("theme", "light");
+    e.children[0].setAttribute("src", "./assets/images/icon-moon.svg");
+  } else {
+    document.documentElement.style.setProperty('--bg', '#161722');
+    document.documentElement.style.setProperty('--cardbg', '#25273c');
+    document.documentElement.style.setProperty('--text', '#cacde8');
+    document.documentElement.style.setProperty('--lighttext', '#777a92');
+    document.documentElement.style.setProperty('--darktext', '#4d5066');
+    e.setAttribute("theme", "dark");
+    e.children[0].setAttribute("src", "./assets/images/icon-sun.svg");
+
+  }
 }
 
 window.addEventListener("load", loadTodo());
