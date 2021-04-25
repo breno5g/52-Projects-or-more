@@ -82,11 +82,13 @@ function check(e) {
     text.style.color = "#4d5066";
     text.style.textDecoration = "line-through";
   }
+  itemsLeft()
 }
 
 function itemsLeft() {
   let span = document.querySelector(".counter").children[0];
-  span.innerText = `${todoList.length} items left`
+  let items = document.querySelectorAll(`[type = "checkbox"]:not(:checked)`);
+  span.innerText = `${items.length} items left`
 }
 
 function saveList() {
