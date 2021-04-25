@@ -50,6 +50,9 @@ function clearCompleted() {
     let todo = checkbox[i].parentElement.parentElement;
     if (checkbox[i].checked) {
       todoList.splice(todo.getAttribute("id"), 1);
+      for (let i = 0; i < todoList.length; i++) {
+        todoList[i].id = i
+      }
       saveList();
       loadTodo();
     }
@@ -108,6 +111,16 @@ function changeTheme(e) {
     e.setAttribute("theme", "dark");
     e.children[0].setAttribute("src", "./assets/images/icon-sun.svg");
 
+  }
+}
+
+function sortActive() {
+  for(let i = 0; i < todoContainer.children.length; i++) {
+    if (todoContainer.children[i].children[0].children[0].checked == true) {
+      console.log("Tá funfando cumpade")
+    } else {
+      console.log("funfou não meu querido")
+    }
   }
 }
 
