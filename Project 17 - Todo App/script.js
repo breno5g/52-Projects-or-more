@@ -1,11 +1,11 @@
 let todoList = [
-  {id: 0, text: "primeiro"},
-  {id: 1, text: "segundo"},
-  {id: 2, text: "terceiro"},
-  {id: 4, text: "Sem Paciencia mermão"},
-  {id: 5, text: "Sem Paciencia mermão"},
-  {id: 6, text: "Sem Paciencia mermão"},
-  {id: 7, text: "Sem Paciencia mermão"},
+  // {id: 0, text: "primeiro"},
+  // {id: 1, text: "segundo"},
+  // {id: 2, text: "terceiro"},
+  // {id: 4, text: "Sem Paciencia mermão"},
+  // {id: 5, text: "Sem Paciencia mermão"},
+  // {id: 6, text: "Sem Paciencia mermão"},
+  // {id: 7, text: "Sem Paciencia mermão"},
 ];
 
 let todoContainer = document.querySelector(".todos");
@@ -17,6 +17,7 @@ function createNewTodo(e) {
   } else {
     todoList.push({id: todoList.length, text: text.value})
     text.value = null;
+    saveList();
     loadTodo();
   }
 }
@@ -58,6 +59,7 @@ function clearCompleted() {
     let todo = checkbox[i].parentElement.parentElement;
     if (checkbox[i].checked) {
       todoList.splice(todo.getAttribute("id"), 1);
+      saveList();
       loadTodo();
     }
   }
@@ -65,6 +67,9 @@ function clearCompleted() {
 
 
 function loadTodo() {
+  if (localStorage.getItem("todoList") != null) {
+    todoList = JSON.parse(localStorage.getItem("todoList"));
+  }
   clearList();
   createElements();
   itemsLeft();
@@ -88,7 +93,10 @@ function check(e) {
 function itemsLeft() {
   let span = document.querySelector(".counter").children[0];
   span.innerText = `${todoList.length} items left`
-  
+}
+
+function saveList() {
+  localStorage.setItem("todoList", JSON.stringify(todoList));
 }
 
 window.addEventListener("load", loadTodo());
