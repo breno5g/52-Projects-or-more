@@ -76,7 +76,8 @@ function loadCompletedTasks() {
   for(let i = 0; i < todoList.length; i++) {
     let todo = document.getElementById(`${i}`);
     if (todoList[i].completed == true) {
-      todo.children[0].children[0].checked = true;
+      // todo.children[0].children[0].checked = true;
+      check(todo.children[0].children[0]);
       console.log(todo)
     }
   }
