@@ -8,7 +8,7 @@ function createNewTodo(e) {
   if (text.value == "") {
     alert("Input is blank")
   } else {
-    todoList.push({id: todoList.length, text: text.value})
+    todoList.push({id: todoList.length, text: text.value, completed: false})
     text.value = null;
     saveList();
     loadTodo();
@@ -68,7 +68,18 @@ function loadTodo() {
   }
   clearList();
   createElements();
+  loadCompletedTasks();
   itemsLeft();
+}
+
+function loadCompletedTasks() {
+  for(let i = 0; i < todoList.length; i++) {
+    let todo = document.getElementById(`${i}`);
+    if (todoList[i].completed == true) {
+      todo.children[0].children[0].checked = true;
+      console.log(todo)
+    }
+  }
 }
 
 function check(e) {
@@ -79,10 +90,12 @@ function check(e) {
     checkbox.checked = false;
     text.style.textDecoration = "none";
     text.style.color = "var(--lighttext)";
+    todoList[todo.id].completed = false;
   } else {
     checkbox.checked = true;
     text.style.color = "var(--semilighttext)";
     text.style.textDecoration = "line-through";
+    todoList[todo.id].completed = true;
   }
   if (sortMode == "all") {
     sortAll();
@@ -91,7 +104,8 @@ function check(e) {
   } else if (sortMode == "completed"){
     sortCompleted();
   }
-  itemsLeft()
+  saveList();
+  itemsLeft();
 }
 
 function itemsLeft() {
@@ -110,7 +124,7 @@ function changeTheme(e) {
     document.documentElement.style.setProperty('--cardbg', '#e4e5f1');
     document.documentElement.style.setProperty('--text', '	#d2d3db');
     document.documentElement.style.setProperty('--lighttext', '	#9394a5');
-    document.documentElement.style.setProperty('--lighttext', '#484b6a');
+    document.documentElement.style.setProperty('--darktext', '#6f728d');
     e.setAttribute("theme", "light");
     e.children[0].setAttribute("src", "./assets/images/icon-moon.svg");
   } else {
