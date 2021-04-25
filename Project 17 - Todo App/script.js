@@ -114,14 +114,42 @@ function changeTheme(e) {
   }
 }
 
-function sortActive() {
+function sortAll(e) {
   for(let i = 0; i < todoContainer.children.length; i++) {
-    if (todoContainer.children[i].children[0].children[0].checked == true) {
-      console.log("Tá funfando cumpade")
+      todoContainer.children[i].style.display = "grid"
+  }
+  sortBtnColor(e);
+}
+
+function sortActive(e) {
+  for(let i = 0; i < todoContainer.children.length; i++) {
+    let todo = todoContainer.children[i].children[0].children[0];
+    if (todo.checked == true) {
+      todoContainer.children[i].style.display = "none"
     } else {
-      console.log("funfou não meu querido")
+      todoContainer.children[i].style.display = "grid"
     }
   }
+  sortBtnColor(e);
+}
+
+function sortCompleted(e) {
+  for(let i = 0; i < todoContainer.children.length; i++) {
+    let todo = todoContainer.children[i].children[0].children[0];
+    if (todo.checked != true) {
+      todoContainer.children[i].style.display = "none"
+    }
+  }
+  sortBtnColor(e);
+}
+
+function sortBtnColor(btn) {
+  let div = document.querySelector(".filters");
+  for (let i = 0; i < div.children.length; i++) {
+    div.children[i].style.color = "var(--lighttext)"
+  }
+
+  btn.style.color = "#3a7bfd";
 }
 
 window.addEventListener("load", loadTodo());
