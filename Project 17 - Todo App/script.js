@@ -37,6 +37,7 @@ function createElements() {
     let rightSide = document.createElement("div");
     rightSide.classList.add("right-side");
     let span = document.createElement("span");
+    span.setAttribute("onclick", "check(this)")
     span.innerText = todoList[i].text;
     leftSide.appendChild(checkbox);
     leftSide.appendChild(label);
@@ -70,8 +71,9 @@ function loadTodo() {
 }
 
 function check(e) {
-  let checkbox = e.parentElement.children[0];
-  let text = e.parentElement.parentElement.children[1].children[0]
+  let todo = e.parentElement.parentElement
+  let checkbox = todo.children[0].children[0];
+  let text = todo.children[1].children[0];
   if (checkbox.checked == true) {
     checkbox.checked = false;
     text.style.textDecoration = "none";

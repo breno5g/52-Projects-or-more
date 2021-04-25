@@ -198,6 +198,10 @@ body {
     font-size: 18px;
 }
 
+.todoApp .container .todo .right-side span {
+    cursor: pointer;
+}
+
 /* =-=-=-= Filters bar =-=-=-= */
 
 .todoApp .bottomBar {
