@@ -1,5 +1,7 @@
 let todoList = [];
 let todoContainer = document.querySelector(".todos");
+let sortMode = "all";
+
 
 function createNewTodo(e) {
   let text = e.parentElement.parentElement.children[1].children[0]
@@ -76,11 +78,18 @@ function check(e) {
   if (checkbox.checked == true) {
     checkbox.checked = false;
     text.style.textDecoration = "none";
-    text.style.color = "#cacde8";
+    text.style.color = "#777a92";
   } else {
     checkbox.checked = true;
     text.style.color = "#4d5066";
     text.style.textDecoration = "line-through";
+  }
+  if (sortMode == "all") {
+    sortAll();
+  } else if (sortMode == "active") {
+    sortActive();
+  } else if (sortMode == "completed"){
+    sortCompleted();
   }
   itemsLeft()
 }
@@ -116,14 +125,15 @@ function changeTheme(e) {
   }
 }
 
-function sortAll(e) {
+function sortAll() {
   for(let i = 0; i < todoContainer.children.length; i++) {
       todoContainer.children[i].style.display = "grid"
   }
-  sortBtnColor(e);
+  sortMode = "all";
+  sortBtnColor(document.getElementById("all"));
 }
 
-function sortActive(e) {
+function sortActive() {
   for(let i = 0; i < todoContainer.children.length; i++) {
     let todo = todoContainer.children[i].children[0].children[0];
     if (todo.checked == true) {
@@ -132,17 +142,21 @@ function sortActive(e) {
       todoContainer.children[i].style.display = "grid"
     }
   }
-  sortBtnColor(e);
+  sortMode = "active";
+  sortBtnColor(document.getElementById("active"));
 }
 
-function sortCompleted(e) {
+function sortCompleted() {
   for(let i = 0; i < todoContainer.children.length; i++) {
     let todo = todoContainer.children[i].children[0].children[0];
     if (todo.checked != true) {
       todoContainer.children[i].style.display = "none"
+    } else {
+      todoContainer.children[i].style.display = "grid"
     }
   }
-  sortBtnColor(e);
+  sortMode = "completed";
+  sortBtnColor(document.getElementById("completed"));
 }
 
 function sortBtnColor(btn) {
