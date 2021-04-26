@@ -58,6 +58,8 @@ function clearCompleted() {
       saveList();
       if (sortMode != "completed") {
         loadTodo();
+      } else {
+        clearList();
       }
     }
   }
