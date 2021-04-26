@@ -4,9 +4,15 @@ let todoList = [];
 let todoContainer = document.querySelector(".todos");
 let sortMode = "all";
 
+document.getElementById("createTaskInput").addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+    createNewTodo(document.getElementById("createTaskInput"));
+  }
+})
 
 function createNewTodo(e) {
-  let text = e.parentElement.parentElement.children[1].children[0]
+  let todo = e.parentElement.parentElement
+  let text = todo.children[1].children[0]
   if (text.value == "") {
     alert("Input is blank")
   } else {
