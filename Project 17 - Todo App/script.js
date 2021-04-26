@@ -28,16 +28,22 @@ function createElements() {
     let label = document.createElement("label");
     label.setAttribute("for", "check");
     label.setAttribute("onclick", "check(this)");
-    let rightSide = document.createElement("div");
-    rightSide.classList.add("right-side");
+    let center = document.createElement("div");
+    center.classList.add("center");
     let span = document.createElement("span");
+    let rightSide = document.createElement("div");
+    let del = document.createElement("button");
+    del.setAttribute('onclick', 'deleteTask(this)');
+    rightSide.classList.add("right-side")
     span.setAttribute("onclick", "check(this)")
     span.innerText = todoList[i].text;
     leftSide.appendChild(checkbox);
     leftSide.appendChild(label);
-    rightSide.appendChild(span);
+    center.appendChild(span);
+    rightSide.appendChild(del)
     todo.appendChild(leftSide);
-    todo.appendChild(rightSide);
+    todo.appendChild(center);
+    todo.appendChild(rightSide)
     todoContainer.appendChild(todo);
   }
 }
@@ -79,9 +85,7 @@ function loadCompletedTasks() {
   for(let i = 0; i < todoList.length; i++) {
     let todo = document.getElementById(`${i}`);
     if (todoList[i].completed == true) {
-      // todo.children[0].children[0].checked = true;
       check(todo.children[0].children[0]);
-      console.log(todo)
     }
   }
 }
@@ -110,6 +114,13 @@ function check(e) {
   }
   saveList();
   itemsLeft();
+}
+
+function deleteTask(e) {
+  let task = e.parentElement.parentElement;
+  todoList.splice(task.id, 1);
+  saveList();
+  loadTodo();
 }
 
 function itemsLeft() {
