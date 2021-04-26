@@ -122,6 +122,9 @@ function check(e) {
 function deleteTask(e) {
   let task = e.parentElement.parentElement;
   todoList.splice(task.id, 1);
+  for (let i = 0; i < todoList.length; i++) {
+    todoList[i].id = i
+  }
   saveList();
   loadTodo();
 }
