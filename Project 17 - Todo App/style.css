@@ -222,6 +222,8 @@ body {
     justify-content: space-between;
     padding: 15px;
     background-color: var(--cardbg);
+    border-radius: 5px;
+    position: relative;
 }
 
 .todoApp .bottomBar .counter {
@@ -255,4 +257,27 @@ body {
 
 .todoApp .bottomBar .clear button {
     color: var(--darktext);
+}
+
+@media screen and (max-width: 400px) {
+    .todoApp {
+        width: 90%;
+    }
+
+    .todoApp .bottomBar .filters {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 60px;
+        gap: 30px;
+        width: 100%;
+        background-color: var(--cardbg);
+        padding: 15px 0;
+        border-radius: 5px;
+    }
+
+    .todoApp .bottomBar .filters button {
+        font-size: 15px;
+    }
 }
