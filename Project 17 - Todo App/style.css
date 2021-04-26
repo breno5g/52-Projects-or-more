@@ -36,6 +36,13 @@ body {
     z-index: -1;
 }
 
+/* =-=-=-= Accessibility =-=-=-= */
+button span {
+    position: absolute;
+    opacity: 0;
+    left: -200vw;
+}
+
 /* =-=-=-= Header =-=-=-= */
 
 .todoApp {
@@ -131,7 +138,6 @@ body {
 .todoApp .container {
     border-radius: 5px;
     background-color: var(--cardbg);
-    /* padding: 2px; */
 }
 
 .todoApp .container .todo {

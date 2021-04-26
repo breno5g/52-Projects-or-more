@@ -34,6 +34,9 @@ function createElements() {
     let rightSide = document.createElement("div");
     let del = document.createElement("button");
     del.setAttribute('onclick', 'deleteTask(this)');
+    let delBtnAcessibilytText = document.createElement("span");
+    delBtnAcessibilytText.innerText = "Delete task button";
+    del.appendChild(delBtnAcessibilytText);
     rightSide.classList.add("right-side")
     span.setAttribute("onclick", "check(this)")
     span.innerText = todoList[i].text;
