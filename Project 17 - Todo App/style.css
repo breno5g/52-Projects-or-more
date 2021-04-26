@@ -27,11 +27,12 @@ body {
 }
 
 .bg {
-    width: 100%;
+    width: 100vw;
     height: 300px;
     position: absolute;
     background-image: url(assets/images/bg-desktop-dark.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     top: 0;
     z-index: -1;
 }
