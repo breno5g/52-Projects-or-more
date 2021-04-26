@@ -56,11 +56,7 @@ function clearCompleted() {
         todoList[i].id = i
       }
       saveList();
-      if (sortMode != "completed") {
-        loadTodo();
-      } else {
-        clearList();
-      }
+      loadTodo();
     }
   }
 }
@@ -69,11 +65,14 @@ function clearCompleted() {
 function loadTodo() {
   if (localStorage.getItem("todoList") != null) {
     todoList = JSON.parse(localStorage.getItem("todoList"));
-  }
+  } 
   clearList();
   createElements();
   loadCompletedTasks();
   itemsLeft();
+  if (sortMode == "completed") {
+    sortCompleted();
+  }
 }
 
 function loadCompletedTasks() {
