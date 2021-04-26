@@ -1,3 +1,5 @@
+'use strict';
+
 let todoList = [];
 let todoContainer = document.querySelector(".todos");
 let sortMode = "all";
