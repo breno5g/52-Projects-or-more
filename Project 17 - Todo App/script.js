@@ -56,7 +56,9 @@ function clearCompleted() {
         todoList[i].id = i
       }
       saveList();
-      loadTodo();
+      if (sortMode != "completed") {
+        loadTodo();
+      }
     }
   }
 }
