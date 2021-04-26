@@ -287,7 +287,7 @@ button span {
     color: var(--darktext);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     .todoApp {
         width: 90%;
     }
