@@ -229,8 +229,9 @@ body {
     cursor: pointer;
 }
 
+.todoApp .container .todo .center span:hover,
 .todoApp .container .todo .right-side button:hover {
-    filter: brightness(200%);
+    filter: brightness(150%);
 }
 
 /* =-=-=-= Filters bar =-=-=-= */
