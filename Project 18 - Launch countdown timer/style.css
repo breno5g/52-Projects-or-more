@@ -36,7 +36,7 @@ body::after {
     background-image: url(assets/images/pattern-hills.svg);
     background-repeat: no-repeat;
     background-position-y: bottom;
-    top: 0;
+    bottom: 0;
     z-index: -1;
 }
 
@@ -55,7 +55,6 @@ body::after {
 }
 
 .countdown .container {
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
@@ -118,4 +117,38 @@ body::after {
 
 .social a img{
     width: 25px;
+}
+
+@media screen and (max-width: 400px) {
+    body::after {
+        bottom: 60px;
+    }
+
+    .countdown h1 {
+        width: 90%;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .countdown .container {
+        width: 95%;
+        gap: 5px;
+    }
+
+    .countdown .container .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .countdown .container .card span{
+        font-size: 10px;
+        letter-spacing: 0;
+    }
+
+    .countdown .container .card .box {
+        width: 70px;
+        height: 70px;
+        font-size: 48px;
+    }
 }

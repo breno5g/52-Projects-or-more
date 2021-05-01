@@ -1,7 +1,7 @@
-let seconds = 30;
-let minutes = 1;
-let hours = 2;
 let days = 8;
+let hours = 2;
+let minutes = 1;
+let seconds = 30;
 
 let timer;
 
