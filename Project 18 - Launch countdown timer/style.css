@@ -3,3 +3,29 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    height: 100vh;
+    background-color: #201E29;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(assets/images/bg-stars.svg);
+    background-repeat: no-repeat;
+}
+
+body::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(assets/images/pattern-hills.svg);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    top: 0;
+}
