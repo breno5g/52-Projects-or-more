@@ -11,10 +11,10 @@ let minuteBox = document.querySelector(".minute");
 let secondBox = document.querySelector(".second"); 
 
 
-function initTimer() {
-    setTime()
+function initTimer() {days
+    loadTime();
+    setTime();
     timer = setInterval(() => {
-        console.log(hours, minutes, seconds);
         if (seconds > 0 && seconds < 60) {
             seconds--; 
         } else if (minutes > 0 && minutes < 60) {
@@ -33,6 +33,7 @@ function initTimer() {
             console.log("hora do descanso");
             clearInterval(timer);
         }
+        saveActualTime();
         setTime()
     }, 1000);
 }
@@ -42,6 +43,28 @@ function setTime() {
     minutes < 10 ?  minuteBox.innerText = `0${minutes}` : minuteBox.innerText = minutes;
     seconds < 10 ?  secondBox.innerText = `0${seconds}` : secondBox.innerText = seconds;
     days < 10 ?  dayBox.innerText = `0${days}` : secondBox.innerText = days;
+}
+
+function saveActualTime() {
+    localStorage.setItem("days", days);
+    localStorage.setItem("hours", hours);
+    localStorage.setItem("minutes", minutes);
+    localStorage.setItem("seconds", seconds);
+}
+
+function loadTime() {
+    if (localStorage.getItem("days") == null || localStorage.getItem("hours") == null || localStorage.getItem("minutes") == null || localStorage.getItem("seconds") == null) {
+        seconds = 30;
+        minutes = 1;
+        hours = 2;
+        days = 8;
+
+    } else {
+        days = localStorage.getItem("days");
+        hours = localStorage.getItem("hours");
+        minutes = localStorage.getItem("minutes");
+        seconds = localStorage.getItem("seconds");
+    }
 }
 
 window.addEventListener("load", initTimer())
