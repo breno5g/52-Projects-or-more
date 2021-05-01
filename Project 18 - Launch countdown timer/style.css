@@ -100,7 +100,7 @@ body::after {
     border-radius: 50%;
     position: absolute;
     left: -5px;
-    box-shadow:  150px 0 #1e1f29;
+    box-shadow:  130px 0 #1e1f29;
 }
 
 .countdown .container .card span {
