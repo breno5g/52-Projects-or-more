@@ -121,7 +121,7 @@ body::after {
 
 @media screen and (max-width: 400px) {
     body::after {
-        bottom: 60px;
+        bottom: 0px;
     }
 
     .countdown h1 {
@@ -150,5 +150,9 @@ body::after {
         width: 70px;
         height: 70px;
         font-size: 48px;
+    }
+
+    .countdown .container .card .box::after {
+        box-shadow:  70px 0 #1e1f29;
     }
 }
