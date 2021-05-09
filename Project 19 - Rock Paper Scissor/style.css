@@ -72,9 +72,9 @@ body {
     line-height: 60px;
 }
 
-/* =-=-=-=-= Game table =-=-=-=-= */
+/* =-=-=-=-= Game table init=-=-=-=-= */
 
-.gameContainer .gameTable {
+.gameContainer .gameTable.init {
     width: 500px;
     display: flex;
     align-content: center;
@@ -86,7 +86,7 @@ body {
     background-size: 270px;
 }
 
-.gameContainer .gameTable span {
+.gameContainer .gameTable .btn {
     width: 120px;
     height: 120px;
     background-color: white;
@@ -94,11 +94,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    line-height: 0px;
     cursor: pointer;
 }
 
-.gameContainer .gameTable span:last-child {
+.gameContainer .gameTable.init .btn:last-child {
     transform: translateY(-50px);
 }
 
@@ -133,4 +132,103 @@ body {
 .gameContainer .rules:hover {
     background-color: white;
     color: #141539;
+}
+
+/* =-=-=-=-= game table wait COM =-=-=--= */
+
+.gameContainer .gameTable.waitCOM {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+.gameContainer .gameTable.waitCOM .btn.COM {
+    background-color: #1415396e;
+}
+
+.gameContainer .gameTable.waitCOM div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.gameContainer .gameTable.waitCOM div span:nth-child(1) {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/* =-=-=-=-= COM response =-=-=-= */
+
+.gameContainer .gameTable.COMResponse {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+.gameContainer .gameTable.COMResponse div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.gameContainer .gameTable.COMResponse div span:nth-child(1) {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/* =-=-=-=-= End Game =-=-=-= */
+.gameContainer .gameTable.end {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.gameContainer .gameTable.end .box {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.gameContainer .gameTable.end .box span:nth-child(1) {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.gameContainer .gameTable.end .endGame {
+    height: 100px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transform: translateY(10px);
+}
+
+.gameContainer .gameTable.end .endGame span {
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.gameContainer .gameTable.end .endGame button {
+    width: 170px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: red;
+    font-weight: 600;
+    cursor: pointer;
 }
