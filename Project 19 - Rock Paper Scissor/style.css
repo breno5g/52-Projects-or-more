@@ -18,8 +18,13 @@ body {
     height: 100%;
     padding: 50px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    position: relative;
 }
+
+/* =-=-=-=-= Header =-=-=-=-= */
 
 .gameContainer header {
     width: 600px;
@@ -65,4 +70,67 @@ body {
     font-size: 60px;
     font-weight: 700;
     line-height: 60px;
+}
+
+/* =-=-=-=-= Game table =-=-=-=-= */
+
+.gameContainer .gameTable {
+    width: 500px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    background: url(Assets/images/bg-triangle.svg) no-repeat center 50px;
+    background-size: 270px;
+}
+
+.gameContainer .gameTable span {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0px;
+    cursor: pointer;
+}
+
+.gameContainer .gameTable span:last-child {
+    transform: translateY(-50px);
+}
+
+.gameContainer .gameTable .paper {
+    box-shadow: 0 0 0 15px #7412e4,
+                inset 2px 6px 0 0 #00000050;
+}
+.gameContainer .gameTable .scissors {
+    box-shadow: 0 0 0 15px #e0e412,
+                inset 2px 6px 0 0 #00000050;
+}
+.gameContainer .gameTable .rock {
+    box-shadow: 0 0 0 15px #e43c12,
+                inset 2px 6px 0 0 #00000050;
+}
+
+.gameContainer .rules {
+    position: absolute;
+    bottom: 50px;   
+    right: 50px;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid #ffffff40;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.gameContainer .rules:hover {
+    background-color: white;
+    color: #141539;
 }
