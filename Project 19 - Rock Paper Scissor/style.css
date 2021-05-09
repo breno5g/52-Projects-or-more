@@ -1,5 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+body {
+    height: 100vh;
+    background: radial-gradient(circle, #1f3756  0%, #141539 100%);
+}
+
+.gameContainer {
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.gameContainer header {
+    width: 600px;
+    height: 130px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #ffffff70;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gameContainer header .gameTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.gameContainer header .scoreBoard {
+    width: 120px;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameContainer header .scoreBoard span:first-child {
+    color: #173d6e;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 15px;
+}
+
+.gameContainer header .scoreBoard span:last-child {
+    color: #3b4363;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
 }
