@@ -3,6 +3,8 @@ let paper = 0;
 let scissors = 1;
 let rock = 2;
 
+let score = 0;
+
 let player;
 
 function init(e) {
@@ -54,17 +56,20 @@ function result() {
     gameTable.classList.add("COMResponse");
     gameTable.classList.remove("waitCOM");
     changeCOMImage(COM)
-    if (player == 0 && COM != 1) {
-        console.log("You win");
-    } else if (player == 1 && COM != 2) {
-        console.log("You win");
-    } else if (player == 2 && COM != 0) {
-        console.log("You win");
-    } else {
-        console.log("You lose");
-    }
     setTimeout(() => {
-        resetGame();
+        if (player == 0 && COM != 1) {
+            resetScreen(true);
+            score++;
+        } else if (player == 1 && COM != 2) {
+            resetScreen(true);
+            score++;
+        } else if (player == 2 && COM != 0) {
+            resetScreen(true);
+            score++;
+        } else {
+            resetScreen(false);
+        }
+        changeScore();
     }, 1000)
 }
 
@@ -84,18 +89,37 @@ function changeCOMImage(n) {
     }
 }
 
-function resetGame() {
+function resetScreen(e) {
     gameTable.classList.add("end");
     gameTable.classList.remove("COMResponse");
     let box = document.createElement("div");
     box.classList.add("endGame");
     let span = document.createElement("span");
-    span.innerText = "You Lose";
+    if (e == true) {
+        span.innerText = "You win";
+    } else {
+        span.innerText = "You lose";
+    }
     let btn = document.createElement("button");
     btn.innerText = "Play again"
+    btn.setAttribute("onclick", "resetGame()")
     box.appendChild(span);
     box.appendChild(btn);
     gameTable.children[0].after(box);
+}
+
+function changeScore() {
+    let scoreboard = document.querySelector(".score");
+    scoreboard.innerText = score;
+}
+
+function resetGame() {
+    clear();
+    gameTable.classList.remove("end");
+    gameTable.classList.add("init");
+    gameTable.innerHTML += '<span onclick="init(this)" value="0" class="btn paper" value><img src="Assets/images/icon-paper.svg" alt=""></span>'
+    gameTable.innerHTML += '<span onclick="init(this)" value="1" class="btn scissors"><img src="Assets/images/icon-scissors.svg" alt=""></span>'
+    gameTable.innerHTML += '<span onclick="init(this)" value="2" class="btn rock"><img src="Assets/images/icon-rock.svg" alt=""></span>'
 }
 
 function clear() {
