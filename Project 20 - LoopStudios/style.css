@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.loopStudios main {
+    height: 100vh;
+    width: 100vw;
+    background: url(assets/images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 120px;
+    position: relative;
+}
+
+.loopStudios main header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.loopStudios main header ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.animatedAnchor {
+    font-weight: 600;
+    position: relative;
+}
+
+.animatedAnchor::after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: white;
+    transition: all 0.2s linear;
+    transform: translateY(4px);
+}
+
+.animatedAnchor:hover::after {
+    width: 100%;
+}
+
+.loopStudios main h1 {
+    width: 600px;
+    height: fit-content;
+    font-weight: 300;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    border: 2px solid white;
+    padding: 20px 30px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+
+.loopStudios .vr {
+    height: 100vh;
+    width: 100vw;
+    padding: 50px 120px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.loopStudios .vr .textBox {
+    width: 650px;
+    height: 360px;
+    position: absolute;
+    right: 100px;
+    bottom: 40px;
+    padding: 110px 80px;
+    padding-bottom: 0;
+    background-color: white;
+}
+
+.loopStudios .vr .textBox h1 {
+    color: black;
+    font-size: 50px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.loopStudios .vr .textBox p {
+    color: #0000009f;
+    line-height: 20px;
+    text-align: left;
+}
+
+.loopStudios .creations {
+    width: 100vw;
+    padding: 50px 120px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.loopStudios .creations header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.loopStudios .creations header h1 {
+    color: black;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.loopStudios .creations header button {
+    width: 150px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: transparent;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all .3s linear;
+    position: relative;
+    overflow: hidden;
+}
+
+.loopStudios .creations header button:hover {
+    color: white;
+}
+
+.loopStudios .creations header button:hover::before {
+    transform: rotateY(0);
+}
+
+.loopStudios .creations header button::before {
+    content: "";
+    width: 180px;
+    height: 200px;
+    background-color: #000000;
+    position: absolute;
+    left: -10px;
+    bottom: -100px;
+    border-radius: 50%;
+    z-index: -1;
+    transform: rotateX(90deg);
+    transition: all 0.5s;
+}
+
+.loopStudios .creations .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3%;
+}
+
+.loopStudios .creations .card {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.loopStudios .creations .card span {
+    position: absolute;
+    color: white;
+    width: 180px;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: auto;
+    left: 40px;
+    bottom: 30px;
+    text-shadow: 0px 0px 8px #000000;
+    transition: all 0.2s ease-in-out;
+}
+
+.loopStudios .creations .card:nth-child(4) span {
+    width: 50px;
+}
+
+.loopStudios .creations .card img {
+    filter: brightness(80%);
+}
+
+.loopStudios .creations .card::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    background-color: #FFFFFF80;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.loopStudios .creations .card:hover span {
+    color: black;
+    z-index: 10;
+    text-shadow: none;
+}
+
+.loopStudios .creations .card:hover::after {
+    visibility: visible;
+    bottom: 0;
+}
+
+.loopStudios footer {
+    width: 100vw;
+    padding: 50px 120px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.loopStudios footer .top,
+.loopStudios footer .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.loopStudios footer ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.loopStudios footer span {
+    color: #ffffff88;
+}
