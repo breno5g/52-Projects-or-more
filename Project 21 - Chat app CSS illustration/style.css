@@ -1,5 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iphone {
+    width: 275px;
+    height: 550px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 0 #00000020;
+    padding: 10px;
+}
+
+.iphone .screen {
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #f5f3f7;
+}
+
+.iphone .screen header {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, #8838ff, #e942ff);
+    justify-content: flex-end;
+    border-radius: 5px;
+    position: relative;
+}
+
+.iphone .screen header::after {
+    content: "";
+    width: 66%;
+    height: 20px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-radius: 0 0 15px 15px;
+}
+
+.iphone .screen header .perfil {
+    display: grid;
+    grid-template-columns: 1fr 1fr 7fr 1fr;
+    align-items: center;
+    padding: 10px;
+    gap: 10px
+}
+
+.iphone .screen header .perfil img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px white;
+}
+
+.iphone .screen header .perfil button {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.iphone .screen header .perfil .headerName {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.iphone .screen header .perfil .headerName span:first-child {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.iphone .screen header .perfil .headerName span:last-child{
+    font-size: 12px;
+    font-weight: 500;
+    color: #FFFFFF90;
+}
+
+/* =-=-=-=-= Chat =-=-=-=-= */
+
+.iphone .screen .chat {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.iphone .screen .chat .samuelMessages,
+.iphone .screen .chat .myMessages {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.iphone .screen .chat .samuelMessages span{
+    max-width: 75%;
+    font-size: 10px;
+    background-color: #c841c815;
+    color: #9241c8;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.iphone .screen .chat .myMessages {
+    align-items: flex-end;
+}
+
+.iphone .screen .chat .myMessages .images{
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.iphone .screen .chat .myMessages .images img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.iphone .screen .chat .myMessages span {
+    width: fit-content;
+    max-width: 75%;
+    font-size: 10px;
+    background-color: #FFF;
+    color: rgba(0, 0, 0, 0.603);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.iphone .screen .chat .samuelMessages .prices {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.iphone .screen .chat .samuelMessages .prices .priceOptions {
+    width: 75%;
+    height: 30px;
+    background: linear-gradient(90deg, #e942ff,  #8838ff);
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    align-items: center;
+    border-radius: 10px 10px 10px 2px;
+    padding: 0 5px;
+}
+
+.iphone .screen .chat .samuelMessages .prices .priceOptions span:nth-child(2) {
+    width: 130px;
+    font-size: 10px;
+    background-color: transparent;
+    color: #ffffffb2;
+    font-weight: 400;
+}
+
+.iphone .screen .chat .samuelMessages .prices .priceOptions span:nth-child(3) {
+    transform: translateX(-25px);
+    font-size: 15px;
+    font-weight: 700;
+    background-color: transparent;
+    color: white;
+}
+
+.iphone .screen .chat .samuelMessages .prices .priceOptions span,
+.iphone .screen .chat .samuelMessages .prices .priceOptions input {
+    transform: translateY(-3px);
+}
+
+.iphone .screen .chat .sendMessage {
+    width: 100%;
+    height: 40px;
+    padding: 0 5px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.iphone .screen .chat .sendMessage input {
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    font-size: 12px;
+    color: #00000065;
+}
+
+.iphone .screen .chat .sendMessage button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    background-color: #3e2753;
+}
+
+.iphone .screen .chat .sendMessage button i {
+    transform: translateX(1px);
 }
