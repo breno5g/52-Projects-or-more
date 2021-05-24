@@ -13,6 +13,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 75px;
+}
+
+body::after {
+    content: "";
+    width: 500px;
+    height: 600px;
+    background: linear-gradient(180deg, #8838ff, #e942ff);
+    position: absolute;
+    left: -100px; top: 0;
+    border-radius: 0 0 50% 50%;
+    z-index: -1;
 }
 
 .iphone {
@@ -20,7 +32,7 @@ body {
     height: 550px;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0 0 20px 0 #00000020;
+    box-shadow: 0 0 20px 0 #00000030;
     padding: 10px;
 }
 
@@ -212,4 +224,21 @@ body {
 
 .iphone .screen .chat .sendMessage button i {
     transform: translateX(1px);
+}
+
+.text {
+    width: 450px;
+}
+
+.text h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #3e2753;
+    margin-bottom: 25px;
+}
+
+.text p {
+    font-size: 16px;
+    color: #3e275350;
+    line-height: 27px;
 }
