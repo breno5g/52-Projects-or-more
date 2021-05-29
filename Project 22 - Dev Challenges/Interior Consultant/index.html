@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Interior Consultant</title>
+</head>
+<body>
+    <header>
+        <span>This Interior</span>
+        <nav>
+            <button class="openMenuBtn" onclick="toggleMenu('open')"><i class="fas fa-bars"></i></button>
+            <ul class="menu">
+                <button class="closeMenuBtn" onclick="toggleMenu('close')">X</i></button>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Collection</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="text">
+            <h1>Modern interior</h1>
+            <p>
+                A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.
+            </p>
+            <button>Read more <i>→</i></button>
+        </section>
+        <aside>
+            <img class="interior" src="assets/photo1.png" alt="">
+            <div class="box">
+                <header>
+                    <img src="assets/photo2.png" alt="">
+                    <div class="title">
+                        <span>Aliza Webber</span>
+                        <span>Interior designer</span>
+                    </div>
+                </header>
+                <span class="description">Designed in 2020 by Aliza Webber</span>
+            </div>
+        </aside>
+    </main>
+
+    <script>
+        function toggleMenu(e) {
+            let menu = document.querySelector(".menu")
+            if (e === "open") {
+                menu.style.display = "flex"
+            } else {
+                menu.style.display = "none"
+            }
+        }
+    </script>
+</body>
+</html>
