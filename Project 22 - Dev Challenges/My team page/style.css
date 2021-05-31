@@ -66,10 +66,13 @@ main .card .name {
 }
 
 main .card .function {
+    display: block;
+    width: 100px;
     position: absolute;
     transform: rotate(90deg);
-    right: -50px;
-    top: 40px;
+    transform-origin: left;
+    right: -100px;
+    top: -10px;
 }
 
 main .card:nth-child(1) {
