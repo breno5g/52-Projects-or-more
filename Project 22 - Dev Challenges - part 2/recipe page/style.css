@@ -141,7 +141,7 @@ main .preparation .recipe .instructions ul li:not(:nth-child(6)) .number span {
 /* =-=-=-= Rigth side card =-=-=-=-= */
 main .cards {
     width: 210px;
-    box-shadow: 0 0 20px 0 #00000020;
+    box-shadow: 0 0 20px 0 #00000015;
     padding: 50px 40px;
     border-radius: 20px;
     display: flex;
