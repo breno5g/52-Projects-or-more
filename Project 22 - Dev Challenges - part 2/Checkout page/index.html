@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Checkout page</title>
+    </head>
+    <body>
+        <div class="checkoutPage">
+            <header>
+                <h1>Checkout</h1>
+            </header>
+            <main>
+                <form action="#">
+                    <fieldset class="contact">
+                        <h1>Contact infomation</h1>
+                        <span>E-mail</span>
+                        <div class="box">
+                            <span><i class="fas fa-envelope"></i></span>
+                            <input
+                                type="text"
+                                placeholder="Enter your email..."
+                            />
+                        </div>
+                        <span>Phone</span>
+                        <div class="box">
+                            <span><i class="fas fa-phone"></i></span>
+                            <input
+                                type="text"
+                                placeholder="Enter your email..."
+                            />
+                        </div>
+                    </fieldset>
+                    <fieldset class="address">
+                        <h1>Shipping address</h1>
+                        <span>Full name</span>
+                        <div class="box">
+                            <span><i class="fas fa-user-circle"></i></span>
+                            <input type="text" placeholder="Rodney Cotton" />
+                        </div>
+                        <span>Address</span>
+                        <div class="box">
+                            <span><i class="fas fa-home"></i></span>
+                            <input type="text" placeholder="Your address.." />
+                        </div>
+                        <span>City</span>
+                        <div class="box">
+                            <span><i class="fas fa-city"></i></span>
+                            <input type="text" placeholder="Your city" />
+                        </div>
+                        <div class="container">
+                            <div class="card">
+                                <span>Country</span>
+                                <div class="box">
+                                    <span
+                                        ><i class="fas fa-globe-americas"></i
+                                    ></span>
+                                    <input
+                                        type="text"
+                                        placeholder="Your country"
+                                    />
+                                </div>
+                            </div>
+                            <div class="card">
+                                <span>Postal code</span>
+                                <div class="box">
+                                    <span
+                                        ><i class="fas fa-mail-bulk"></i
+                                    ></span>
+                                    <input
+                                        type="text"
+                                        placeholder="Postal code"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="save">
+                        <input type="checkbox" name="" id="" />
+                        <span>Save this information for next time</span>
+                    </div>
+                    <button>Continue</button>
+                </form>
+                <aside class="cart">
+                    <div class="card">
+                        <img
+                            src="assets/checkout-page-master/photo1.png"
+                            alt=""
+                        />
+                        <div class="text">
+                            <h1>Vintage Backbag</h1>
+                            <div class="price">
+                                <span>$54.99</span>
+                                <span>$94.99</span>
+                            </div>
+                            <div class="count">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="assets/checkout-page-master/photo2.png"
+                            alt=""
+                        />
+                        <div class="text">
+                            <h1>Levi Shoes</h1>
+                            <div class="price">
+                                <span>$74.99</span>
+                                <span>$124.99</span>
+                            </div>
+                            <div class="count">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <footer>
+                        <div class="shipping">
+                            <span>Shipping</span>
+                            <span>$19</span>
+                        </div>
+                        <div class="total">
+                            <span>Total</span>
+                            <span>$148.98</span>
+                        </div>
+                    </footer>
+                </aside>
+            </main>
+        </div>
+    </body>
+</html>

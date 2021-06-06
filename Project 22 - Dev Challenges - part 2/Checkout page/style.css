@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.checkoutPage {
+    max-width: 1000px;
+}
+
+/* =-=-=-= Header =-=-=-= */
+header {
+    width: 1000px;
+    display: block;
+    padding: 25px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #4e5150;
+}
+
+/* =-=-=-= Main =-=-=-= */
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* =-=-=-= Form =-=-=-= */
+main form {
+    max-width: 55%;
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+main form fieldset {
+    width: 100%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+main form fieldset h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+}
+
+main form fieldset span {
+    font-size: 12px;
+    font-weight: 600;
+    color: #4f4f4f;
+}
+
+main form fieldset .box {
+    border: 1px solid #828282;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+    border-radius: 12px;
+}
+
+main form fieldset .box span {
+    font-size: 16px;
+    color: #828282;
+}
+
+main form fieldset .box input {
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+main form fieldset .container {
+    display: flex;
+    gap: 25px;
+}
+
+main form fieldset .container .card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main form .save {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    align-self: flex-start;
+}
+
+main form .save input {
+    min-width: 20px;
+    min-height: 20px;
+    margin-right: 10px;
+}
+
+main form .save span {
+    font-size: 12px;
+    font-weight: 600;
+    color: #4f4f4f;
+}
+
+main form button {
+    width: 160px;
+    height: 55px;
+    background-color: #f2994a;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+/* =-=-=-= Cart =-=-=-= */
+main .cart {
+    width: 350px;
+    height: 500px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 12px;
+}
+
+main .cart .card {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+main .cart .card img {
+    width: 150px;
+    height: 140px;
+    border-radius: 12px;
+}
+
+main .cart .card .text {
+    width: 100%;
+}
+
+main .cart .card .text h1 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #4e5150;
+}
+
+main .cart .card .text .price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+main .cart .card .text .price span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #4e5150;
+}
+
+main .cart .card .text .price span:first-child {
+    color: #f2994a;
+}
+
+main .cart .card .text .count {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #828282;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+main .cart .card .text .count button {
+    height: 21px;
+    width: 21px;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    border: none;
+    color: #828282;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+main .cart footer {
+    margin-top: 70px;
+}
+
+main .cart footer .shipping,
+main .cart footer .total {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #bdbdbd;
+    padding: 10px 0;
+}
+
+main .cart footer span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+}
