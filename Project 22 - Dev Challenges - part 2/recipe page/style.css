@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif; */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0 200px;
+    overflow-x: hidden;
+}
+
+/* =-=-=-=-= Header =-=-=-=-= */
+
+header {
+    padding: 25px 0;
+}
+
+header h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+header p {
+    max-width: 500px;
+    margin-left: 25px;
+    position: relative;
+    margin-top: 10px;
+}
+
+header p::after {
+    content: "• • • • • • ";
+    font-size: 13px;
+    position: absolute;
+    left: -20px;
+    top: 2px;
+    width: 20px;
+    letter-spacing: -1px;
+    line-height: 6px;
+    color: #00000070;
+}
+
+/* =-=-=-=-= Main Section =-=-=-=-= */
+
+main figure {
+    width: 100%;
+    height: 500px;
+}
+
+main figure img {
+    width: 100%;
+}
+
+main .preparation {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* =-=-=-=-= Ingredients =-=-=-=-= */
+
+main .preparation .recipe {
+    max-width: 550px;
+}
+
+main .preparation .recipe .ingredients,
+main .preparation .recipe .instructions {
+    color: #333333;
+}
+
+main .preparation .recipe .ingredients h1,
+main .preparation .recipe .instructions h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+main .preparation .recipe .ingredients ul h1 {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    margin: 25px 0;
+}
+
+main .preparation .recipe .ingredients ul li,
+main .preparation .recipe .instructions ul li {
+    list-style: none;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+main .preparation .recipe .ingredients ul li input {
+    min-width: 21px;
+    min-height: 21px;
+}
+
+main .preparation .recipe .ingredients ul li span,
+main .preparation .recipe .instructions ul li span {
+    font-family: "Montserrat", sans-serif;
+}
+
+main .preparation .recipe .ingredients ul li span span,
+main .preparation .recipe .instructions ul li span span {
+    font-weight: 600;
+}
+
+/* =-=-=-= Instructions =-=-=-= */
+main .preparation .recipe .instructions ul li {
+    margin-bottom: 30px;
+}
+
+main .preparation .recipe .instructions ul li .number {
+    min-width: 36px;
+    min-height: 36px;
+    background-color: #f2994a;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+main .preparation .recipe .instructions ul li .number span {
+    font-size: 24px;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    color: white;
+}
+
+main .preparation .recipe .instructions ul li:not(:nth-child(6)) .number span {
+    transform: translateY(-5px);
+}
+
+/* =-=-=-= Rigth side card =-=-=-=-= */
+main .cards {
+    width: 210px;
+    box-shadow: 0 0 20px 0 #00000020;
+    padding: 50px 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+main .cards .card {
+    display: flex;
+    gap: 15px;
+}
+
+main .cards .card img {
+    width: 25px;
+}
+
+main .cards .card span {
+    font-size: 25px;
+}
+
+main .cards .card .text {
+    display: flex;
+    flex-direction: column;
+}
+
+main .cards .card .text span:first-child {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #bdbdbd;
+}
+
+main .cards .card .text span:last-child {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+main .cards .card:first-child .text span:last-child {
+    color: #f2994a;
+}
