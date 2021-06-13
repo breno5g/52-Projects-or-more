@@ -15,6 +15,7 @@ body {
 }
 
 .checkoutPage {
+    width: 90%;
     max-width: 1000px;
 }
 
@@ -36,11 +37,20 @@ header h1 {
 main {
     display: flex;
     justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 400px) {
+    main {
+        flex-direction: column;
+        gap: 30px;
+    }
 }
 
 /* =-=-=-= Form =-=-=-= */
 main form {
-    max-width: 55%;
+    width: 100%;
+    max-width: 500px;
     position: relative;
     margin-bottom: 20px;
     display: flex;
