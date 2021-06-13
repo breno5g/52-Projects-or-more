@@ -1,5 +1,464 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.siteContainer {
+    width: auto;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* =-=-=-=-= Barra de menu =-=-=-=-= */
+header.menuBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    overflow: hidden;
+}
+
+header.menuBar .logo {
+    font-size: 36px;
+    font-weight: 800;
+    font-family: "Heebo", sans-serif;
+}
+
+header.menuBar nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+header.menuBar nav ul a {
+    font-size: 24px;
+    color: #000;
+    font-weight: 500;
+    position: relative;
+}
+
+header.menuBar nav ul a::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transform: rotateY(90deg);
+    transition: all 0.3s;
+}
+
+header.menuBar nav ul a:hover::after {
+    transform: rotateY(0deg);
+}
+
+/* =-=-=-=-= Main section =-=-=-=-= */
+main {
+    padding: 20px 50px;
+}
+
+main .introduction .firstBox {
+    width: 75%;
+    margin-left: 200px;
+    margin-bottom: 50px;
+}
+
+main .introduction .firstBox span {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2d9cdb;
+}
+
+main .introduction .firstBox h1 {
+    width: 550px;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 55px;
+    margin: 20px 0;
+}
+
+main .introduction figure img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+main .introduction .lastBox {
+    width: 400px;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+main .introduction .lastBox h1 {
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+main .introduction .lastBox p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #4f4f4f;
+    margin-bottom: 20px;
+}
+
+main .introduction .lastBox .contact span,
+footer.contact span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #828282;
+}
+
+main .introduction .lastBox .contact .box,
+footer .contact .box {
+    width: 100%;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    height: 60px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+main .introduction .lastBox .contact .box input,
+footer .contact .box input {
+    width: 70%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    padding-left: 20px;
+}
+
+main .introduction .lastBox .contact .box input::placeholder,
+footer .contact .box input::placeholder {
+    font-size: 18px;
+    font-weight: 500;
+    color: #bdbdbd;
+}
+
+main .introduction .lastBox .contact .box button,
+footer .contact .box button {
+    width: 100px;
+    height: 100%;
+    border-radius: 15px;
+    border: none;
+    background-color: #2d9cdb;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* =-=-=-=-= About =-=-=-=-= */
+main .about {
+    padding: 100px;
+}
+
+main .about .services h1 {
+    font-size: 36px;
+    font-weight: 500;
+    width: 350px;
+    line-height: 45px;
+    margin-bottom: 40px;
+}
+
+main .about .services .cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+main .about .services .cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+main .about .services .cards .card:hover {
+    box-shadow: 0 0 20px 0px #00000020;
+}
+
+main .about .services .cards .card span {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 23px;
+    border-radius: 15px;
+}
+
+main .about .services .cards .card:nth-child(1) span {
+    background-color: #2d9cdb;
+}
+main .about .services .cards .card:nth-child(2) span {
+    background-color: #27ae60;
+}
+main .about .services .cards .card:nth-child(3) span {
+    background-color: #eb5757;
+}
+
+main .about .services .cards .card h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+main .about .services .cards .card p {
+    font-size: 16px;
+    color: #4f4f4f;
+}
+
+main .about .services .cards .card button {
+    width: 116px;
+    height: 42px;
+    background: #e0e0e0;
+    border-radius: 12px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #828282;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+main .about .services .cards .card:hover button {
+    background-color: #2d9cdb;
+    color: white;
+}
+
+/* =-=-=-=-= Projects =-=-=-=-= */
+main .about .projects {
+    margin-top: 50px;
+    position: relative;
+    height: 1500px;
+}
+
+main .about .projects h1 {
+    width: 450px;
+    font-weight: 500;
+    font-size: 36px;
+    color: #333333;
+    margin-bottom: 50px;
+}
+
+main .about .projects .cards {
+    width: 100%;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    gap: 30px;
+}
+
+main .about .projects .cards .card:nth-child(1),
+main .about .projects .cards .card:nth-child(3) {
+    transform: translateY(80px);
+}
+
+main .about .projects .cards .card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+main .about .projects .cards .card span {
+    font-weight: 300;
+    font-size: 14px;
+    color: #828282;
+}
+
+main .about .projects .cards .card h2 {
+    font-weight: 500;
+    font-size: 24px;
+    color: #333333;
+}
+
+main .about .projects button {
+    border: none;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 24px;
+    color: #2d9cdb;
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    cursor: pointer;
+}
+
+main .about .projects button i {
+    font-weight: 800;
+    font-size: 34px;
+    color: #2d9cdb;
+}
+
+/* =-=-=-=-= Team with furious grid =-=-=-=-= */
+main .about .team {
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+main .about .team .texts {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+main .about .team .texts span {
+    font-weight: 500;
+    font-size: 18px;
+    color: #eb5757;
+}
+
+main .about .team .texts h1 {
+    width: 280px;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+main .about .team .texts p {
+    font-size: 16px;
+    color: #4f4f4f;
+}
+
+main .about .team .furiousGrid {
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+        "i3 i1"
+        "i3 i1"
+        "i3 i2"
+        "i3 i2";
+    align-items: center;
+    gap: 20px;
+}
+
+main .about .team .furiousGrid img {
+    border-radius: 20px;
+}
+
+main .about .team .furiousGrid img:nth-child(1) {
+    grid-area: i1;
+}
+main .about .team .furiousGrid img:nth-child(2) {
+    grid-area: i2;
+}
+main .about .team .furiousGrid img:nth-child(3) {
+    grid-area: i3;
+}
+
+/* =-=-=-=-= Testimonial =-=-=-=-= */
+main .about .testimonial {
+    margin-top: 100px;
+}
+main .about .testimonial p {
+    width: 950px;
+    font-weight: 500;
+    font-size: 36px;
+    color: #333333;
+}
+
+main .about .testimonial .box {
+    display: flex;
+    height: 60px;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+main .about .testimonial .box img {
+    border-radius: 10px;
+}
+
+main .about .testimonial .box .texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main .about .testimonial .box .texts span:first-child {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+main .about .testimonial .box .texts span:last-child {
+    font-weight: 500;
+    font-size: 18px;
+    color: #828282;
+}
+
+/* =-=-=-=-= Footer =-=-=-=-=-= */
+
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: #100e1d;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer nav ul a {
+    width: fit-content;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer nav ul a::after {
+    content: "";
+    width: calc(100% + 5px);
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transform: rotateY(90deg);
+    transition: all 0.3s;
+}
+
+footer nav ul a:hover::after {
+    transform: rotateY(0deg);
+}
+
+footer .social h1 {
+    font-family: "Heebo", sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer .social .box button {
+    border: none;
+    background-color: transparent;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+footer .contact span {
+    color: white;
 }
