@@ -19,7 +19,6 @@ body {
     max-width: 1400px;
     margin: 0 auto;
 }
-
 /* =-=-=-=-= Barra de menu =-=-=-=-= */
 header.menuBar {
     display: flex;
