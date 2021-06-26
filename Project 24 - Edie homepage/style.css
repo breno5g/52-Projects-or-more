@@ -19,6 +19,7 @@ body {
     max-width: 1400px;
     margin: 0 auto;
 }
+
 /* =-=-=-=-= Barra de menu =-=-=-=-= */
 header.menuBar {
     display: flex;
@@ -62,7 +63,7 @@ header.menuBar nav ul a:hover::after {
     transform: rotateY(0deg);
 }
 
-/* =-=-=-= Main section =-=-=-= */
+/* =-=-=-=-= Main section =-=-=-=-= */
 main {
     padding: 20px 50px;
 }
