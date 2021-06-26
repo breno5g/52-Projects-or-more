@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --boxBG: #ffffff;
+    --radius: 10px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+
+.portfolioContainer {
+    max-width: 935px;
+    min-width: 935px;
+    padding: 50px 0;
+}
+
+/* =-=-=-=-= Header =-=-=-=-= */
+.portfolioContainer header.header {
+    display: flex;
+    height: 230px;
+    width: 100%;
+    background-color: var(--boxBG);
+    border-radius: var(--radius);
+    padding: 20px;
+    gap: 20px;
+}
+
+.portfolioContainer header figure img {
+    height: 100%;
+    border-radius: var(--radius);
+}
+
+.portfolioContainer header .informations header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.portfolioContainer header .informations header div,
+.portfolioContainer header .informations header aside {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.portfolioContainer header .informations header div h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #4f4f4f;
+    margin-bottom: 5px;
+}
+
+.portfolioContainer header .informations header div span {
+    font-size: 18px;
+    font-weight: 500;
+    color: #828282;
+}
+
+.portfolioContainer header .informations header aside span {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #4f4f4f;
+    margin-bottom: 5px;
+}
+
+.portfolioContainer header .informations header aside span i {
+    margin-right: 10px;
+}
+
+.portfolioContainer header .informations .textContainer {
+    margin-top: 20px;
+}
+
+.portfolioContainer header .informations .textContainer p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #828282;
+    margin-bottom: 20px;
+}
