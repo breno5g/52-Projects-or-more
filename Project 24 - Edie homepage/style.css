@@ -63,7 +63,7 @@ header.menuBar nav ul a:hover::after {
     transform: rotateY(0deg);
 }
 
-/* =-=-=-=-= Main section =-=-=-=-= */
+/* =-=-=-== Main section ==-=-=-= */
 main {
     padding: 20px 50px;
 }
