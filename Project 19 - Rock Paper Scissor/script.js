@@ -23,13 +23,13 @@ function waitCOM(e) {
     playerSelected.classList.add("btn");
     if (e.getAttribute("value") == paper) {
         playerSelected.classList.add("paper");
-        playerSelected.innerHTML = `<img src="Assets/images/icon-paper.svg" alt="paper">`
+        playerSelected.innerHTML = `<img src="Assets/images/icon-paper.svg" alt="paper">`;
     } else if (e.getAttribute("value") == scissors) {
         playerSelected.classList.add("scissors");
-        playerSelected.innerHTML = `<img src="Assets/images/icon-scissors.svg" alt="scissors">`
+        playerSelected.innerHTML = `<img src="Assets/images/icon-scissors.svg" alt="scissors">`;
     } else {
         playerSelected.classList.add("rock");
-        playerSelected.innerHTML = `<img src="Assets/images/icon-rock.svg" alt="rock">`
+        playerSelected.innerHTML = `<img src="Assets/images/icon-rock.svg" alt="rock">`;
     }
     playerBox.appendChild(playerTitle);
     playerBox.appendChild(playerSelected);
@@ -45,17 +45,17 @@ function waitCOM(e) {
     gameTable.appendChild(COMBox);
     setTimeout(() => {
         result();
-    }, 1500)
+    }, 1500);
 }
 
 function result() {
     let COM = Math.floor(Math.random() * 3);
     while (COM == parseInt(player)) {
-        COM = Math.floor(Math.random() * 3)
+        COM = Math.floor(Math.random() * 3);
     }
     gameTable.classList.add("COMResponse");
     gameTable.classList.remove("waitCOM");
-    changeCOMImage(COM)
+    changeCOMImage(COM);
     setTimeout(() => {
         if (player == 0 && COM != 1) {
             resetScreen(true);
@@ -70,7 +70,7 @@ function result() {
             resetScreen(false);
         }
         changeScore();
-    }, 1000)
+    }, 1000);
 }
 
 function changeCOMImage(n) {
@@ -79,13 +79,13 @@ function changeCOMImage(n) {
     COM.classList.remove("COM");
     if (n == paper) {
         COM.classList.add("paper");
-        COM.innerHTML = `<img src="Assets/images/icon-paper.svg" alt="paper">`
+        COM.innerHTML = `<img src="Assets/images/icon-paper.svg" alt="paper">`;
     } else if (n == scissors) {
         COM.classList.add("scissors");
-        COM.innerHTML = `<img src="Assets/images/icon-scissors.svg" alt="scissors">`
+        COM.innerHTML = `<img src="Assets/images/icon-scissors.svg" alt="scissors">`;
     } else {
         COM.classList.add("rock");
-        COM.innerHTML = `<img src="Assets/images/icon-rock.svg" alt="rock">`
+        COM.innerHTML = `<img src="Assets/images/icon-rock.svg" alt="rock">`;
     }
 }
 
@@ -101,8 +101,8 @@ function resetScreen(e) {
         span.innerText = "You lose";
     }
     let btn = document.createElement("button");
-    btn.innerText = "Play again"
-    btn.setAttribute("onclick", "resetGame()")
+    btn.innerText = "Play again";
+    btn.setAttribute("onclick", "resetGame()");
     box.appendChild(span);
     box.appendChild(btn);
     gameTable.children[0].after(box);
@@ -117,9 +117,12 @@ function resetGame() {
     clear();
     gameTable.classList.remove("end");
     gameTable.classList.add("init");
-    gameTable.innerHTML += '<span onclick="init(this)" value="0" class="btn paper" value><img src="Assets/images/icon-paper.svg" alt=""></span>'
-    gameTable.innerHTML += '<span onclick="init(this)" value="1" class="btn scissors"><img src="Assets/images/icon-scissors.svg" alt=""></span>'
-    gameTable.innerHTML += '<span onclick="init(this)" value="2" class="btn rock"><img src="Assets/images/icon-rock.svg" alt=""></span>'
+    gameTable.innerHTML +=
+        '<span onclick="init(this)" value="0" class="btn paper" value><img src="Assets/images/icon-paper.svg" alt=""></span>';
+    gameTable.innerHTML +=
+        '<span onclick="init(this)" value="1" class="btn scissors"><img src="Assets/images/icon-scissors.svg" alt=""></span>';
+    gameTable.innerHTML +=
+        '<span onclick="init(this)" value="2" class="btn rock"><img src="Assets/images/icon-rock.svg" alt=""></span>';
 }
 
 function clear() {
